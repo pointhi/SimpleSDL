@@ -13,6 +13,7 @@
 #include "Time.hpp"
 #include "Surface.hpp"
 #include "Window.hpp"
+#include "Image.hpp"
 
 #endif	/* SIMPLESDL_HPP */
 

@@ -8,14 +8,14 @@
 #ifndef SSDL_WINDOW_HPP
 #define	SSDL_WINDOW_HPP
 
-#include "Surface.hpp"
+#include "DrawingArea.hpp"
 #include <string>
 
 namespace SDL {
 
     class Surface;
 
-    class Window : public SDL::Surface {
+    class Window : public SDL::DrawingArea {
     public:
         Window();
         virtual ~Window();

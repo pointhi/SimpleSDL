@@ -36,7 +36,9 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/_ext/1908258589/Color.o \
+	${OBJECTDIR}/_ext/1908258589/DrawingArea.o \
 	${OBJECTDIR}/_ext/1908258589/General.o \
+	${OBJECTDIR}/_ext/1908258589/Image.o \
 	${OBJECTDIR}/_ext/1908258589/Surface.o \
 	${OBJECTDIR}/_ext/1908258589/Time.o \
 	${OBJECTDIR}/src/Window.o
@@ -71,10 +73,20 @@ ${OBJECTDIR}/_ext/1908258589/Color.o: /home/thomas/Dokumente/Projekte/Graphic/Si
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1908258589/Color.o /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Color.cpp
 
+${OBJECTDIR}/_ext/1908258589/DrawingArea.o: /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/DrawingArea.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/1908258589
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1908258589/DrawingArea.o /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/DrawingArea.cpp
+
 ${OBJECTDIR}/_ext/1908258589/General.o: /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/General.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/1908258589
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1908258589/General.o /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/General.cpp
+
+${OBJECTDIR}/_ext/1908258589/Image.o: /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Image.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/1908258589
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1908258589/Image.o /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Image.cpp
 
 ${OBJECTDIR}/_ext/1908258589/Surface.o: /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Surface.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/1908258589
