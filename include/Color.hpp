@@ -12,21 +12,34 @@ namespace SDL {
 
     class Color {
     public:
-        Color(int Red = 0, int Green = 0, int Blue = 0);
+        explicit Color(int Red = 0, int Green = 0, int Blue = 0, int Alpha = 255);
         //        Color(const Color& orig);
         //        virtual ~Color();
 
-        void SetColor(int Red = 0, int Green = 0, int Blue = 0);
+        void SetColor(const int Red = 0, const int Green = 0, const int Blue = 0, const int Alpha = 255);
 
-        int GetRed();
-        int GetGreen();
-        int GetBlue();
+        int GetRed() {
+            return this->Red;
+        }
+
+        int GetGreen() {
+            return this->Green;
+        }
+
+        int GetBlue() {
+            return this->Blue;
+        }
+
+        int GetAlpha() {
+            return this->Alpha;
+        }
 
     private:
 
         int Red;
         int Green;
         int Blue;
+        int Alpha;
 
     };
 

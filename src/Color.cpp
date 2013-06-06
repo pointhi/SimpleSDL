@@ -9,8 +9,8 @@
 
 namespace SDL {
 
-    Color::Color(int Red, int Green, int Blue) {
-        this->SetColor(Red, Green, Blue);
+    Color::Color(int Red, int Green, int Blue, int Alpha) {
+        //        this->SetColor(Red, Green, Blue, Alpha);
     }
 
     //    Color::Color(const Color& orig) {
@@ -19,23 +19,12 @@ namespace SDL {
     //    Color::~Color() {
     //    }
 
-    void Color::SetColor(int Red, int Green, int Blue) {
+    void Color::SetColor(const int Red, const int Green, const int Blue, const int Alpha) {
 
         this->Red = Red;
         this->Green = Green;
         this->Blue = Blue;
-    }
-
-    int Color::GetRed() {
-        return this->Red;
-    }
-
-    int Color::GetGreen() {
-        return this->Green;
-    }
-
-    int Color::GetBlue() {
-        return this->Blue;
+        this->Alpha = Alpha;
     }
 
 }

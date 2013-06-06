@@ -60,36 +60,36 @@ LDLIBSOPTIONS=-lSDL -lSDL_gfx
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libSimpleSDL.${CND_DLIB_EXT}
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${TESTDIR}/TestFiles/f1
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libSimpleSDL.${CND_DLIB_EXT}: ${OBJECTFILES}
-	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libSimpleSDL.${CND_DLIB_EXT} ${OBJECTFILES} ${LDLIBSOPTIONS} -shared -fPIC
+${TESTDIR}/TestFiles/f1: ${OBJECTFILES}
+	${MKDIR} -p ${TESTDIR}/TestFiles
+	${LINK.cc} -o ${TESTDIR}/TestFiles/f1 ${OBJECTFILES} ${LDLIBSOPTIONS} -shared -fPIC
 
 ${OBJECTDIR}/_ext/1908258589/Color.o: /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Color.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/1908258589
 	${RM} $@.d
-	$(COMPILE.cc) -g -I/usr/include/SDL -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1908258589/Color.o /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Color.cpp
+	$(COMPILE.cc) -g -I/usr/include/SDL -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1908258589/Color.o /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Color.cpp
 
 ${OBJECTDIR}/_ext/1908258589/General.o: /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/General.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/1908258589
 	${RM} $@.d
-	$(COMPILE.cc) -g -I/usr/include/SDL -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1908258589/General.o /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/General.cpp
+	$(COMPILE.cc) -g -I/usr/include/SDL -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1908258589/General.o /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/General.cpp
 
 ${OBJECTDIR}/_ext/1908258589/Surface.o: /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Surface.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/1908258589
 	${RM} $@.d
-	$(COMPILE.cc) -g -I/usr/include/SDL -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1908258589/Surface.o /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Surface.cpp
+	$(COMPILE.cc) -g -I/usr/include/SDL -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1908258589/Surface.o /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Surface.cpp
 
 ${OBJECTDIR}/_ext/1908258589/Time.o: /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Time.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/1908258589
 	${RM} $@.d
-	$(COMPILE.cc) -g -I/usr/include/SDL -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1908258589/Time.o /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Time.cpp
+	$(COMPILE.cc) -g -I/usr/include/SDL -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1908258589/Time.o /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Time.cpp
 
 ${OBJECTDIR}/src/Window.o: src/Window.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} $@.d
-	$(COMPILE.cc) -g -I/usr/include/SDL -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/Window.o src/Window.cpp
+	$(COMPILE.cc) -g -I/usr/include/SDL -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/Window.o src/Window.cpp
 
 # Subprojects
 .build-subprojects:
@@ -97,7 +97,7 @@ ${OBJECTDIR}/src/Window.o: src/Window.cpp
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libSimpleSDL.${CND_DLIB_EXT}
+	${RM} ${TESTDIR}/TestFiles/f1
 
 # Subprojects
 .clean-subprojects:
