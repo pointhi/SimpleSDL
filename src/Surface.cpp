@@ -15,7 +15,7 @@
 namespace SDL {
 
     Surface::Surface() {
-
+        this->surface = NULL;
     }
 
     Surface::Surface(const Surface& orig) {
@@ -23,7 +23,7 @@ namespace SDL {
     }
 
     Surface::~Surface() {
-
+        // XXX: Gabage collecting?
     }
 
     SDL_Surface* Surface::GetSurface() {
@@ -31,7 +31,7 @@ namespace SDL {
     }
 
     void Surface::DrawString(int x, int y, int size, std::string Text, SDL::Color Color) {
-        //        gfxPrimitivesSetFont(&SDL_gfx_font_9x18B_fnt, 9, 18);
+        //        gfxPrimitivesSetFont(&SDL_gfx_font_9x18B_fnt, 9, 18); // TODO: SDL_ttf?
         stringRGBA(this->surface, x, y, Text.c_str(), Color.GetRed(), Color.GetGreen(), Color.GetBlue(), 255);
     }
 

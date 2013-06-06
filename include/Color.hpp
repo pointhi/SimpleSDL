@@ -5,18 +5,20 @@
  * Created on 5. Juni 2013, 19:56
  */
 
-#ifndef COLOR_HPP
-#define	COLOR_HPP
+#ifndef SSDL_COLOR_HPP
+#define	SSDL_COLOR_HPP
 
 namespace SDL {
 
     class Color {
     public:
-        explicit Color(int Red = 0, int Green = 0, int Blue = 0, int Alpha = 255);
+        explicit Color(const int Red = 0, const int Green = 0, const int Blue = 0, const int Alpha = 255);
         //        Color(const Color& orig);
         //        virtual ~Color();
 
         void SetColor(const int Red = 0, const int Green = 0, const int Blue = 0, const int Alpha = 255);
+
+        // XXX: SetFunctions with Value correcting or uint8
 
         int GetRed() {
             return this->Red;

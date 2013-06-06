@@ -5,8 +5,8 @@
  * Created on 5. Juni 2013, 18:04
  */
 
-#ifndef GENERAL_HPP
-#define	GENERAL_HPP
+#ifndef SSDL_GENERAL_HPP
+#define	SSDL_GENERAL_HPP
 
 namespace SDL {
 

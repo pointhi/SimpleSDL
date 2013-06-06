@@ -60,11 +60,11 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${TESTDIR}/TestFiles/f1
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libSimpleSDL.${CND_DLIB_EXT}
 
-${TESTDIR}/TestFiles/f1: ${OBJECTFILES}
-	${MKDIR} -p ${TESTDIR}/TestFiles
-	${LINK.cc} -o ${TESTDIR}/TestFiles/f1 ${OBJECTFILES} ${LDLIBSOPTIONS} -shared -fPIC
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libSimpleSDL.${CND_DLIB_EXT}: ${OBJECTFILES}
+	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libSimpleSDL.${CND_DLIB_EXT} ${OBJECTFILES} ${LDLIBSOPTIONS} -shared -fPIC
 
 ${OBJECTDIR}/_ext/1908258589/Color.o: /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Color.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/1908258589
@@ -97,7 +97,7 @@ ${OBJECTDIR}/src/Window.o: src/Window.cpp
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${TESTDIR}/TestFiles/f1
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libSimpleSDL.${CND_DLIB_EXT}
 
 # Subprojects
 .clean-subprojects:

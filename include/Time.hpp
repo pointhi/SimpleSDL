@@ -5,8 +5,8 @@
  * Created on 5. Juni 2013, 19:06
  */
 
-#ifndef TIME_HPP
-#define	TIME_HPP
+#ifndef SSDL_TIME_HPP
+#define	SSDL_TIME_HPP
 
 namespace SDL {
 

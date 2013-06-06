@@ -5,14 +5,13 @@
  * Created on 5. Juni 2013, 18:30
  */
 
-#ifndef SURFACE_H
-#define	SURFACE_H
+#ifndef SSDL_SURFACE_H
+#define	SSDL_SURFACE_H
 
-#include "SDL/SDL.h"
-
-#include <tr1/memory>
 #include "Color.hpp"
 #include <string>
+
+struct SDL_Surface;
 
 namespace SDL {
 

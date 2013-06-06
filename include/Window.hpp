@@ -5,11 +5,8 @@
  * Created on 5. Juni 2013, 17:51
  */
 
-#ifndef WINDOW_HPP
-#define	WINDOW_HPP
-
-#include "SDL/SDL.h"
-#include <tr1/memory>
+#ifndef SSDL_WINDOW_HPP
+#define	SSDL_WINDOW_HPP
 
 #include "Surface.hpp"
 #include <string>
