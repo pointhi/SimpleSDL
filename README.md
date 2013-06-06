@@ -12,6 +12,13 @@ a C++ Library to simplify graphic working with SDL and adding important function
 * SDL
 * SDL_gfx
 
+####Installation on Debian/Ubuntu
+
+```
+sudo apt-get install libsdl1.2-dev
+sudo apt-get install libsdl-gfx1.2-dev
+```
+
 ##Important
 
 ####Working on Windows with SimpleSDL
@@ -63,7 +70,7 @@ int main(int argc, char** argv) {
 
     SDL_Window.DrawFilledRect(20, 20, 80, 80, SDL::Color(255, 255, 0));
 
-    SDL_Window.DrawFilledCircle(200, 200, 80, SDL::Color(255, 255, 255));
+    SDL_Window.DrawFilledCircle(200, 200, 80, SDL::ColorList::White);
 
     SDL_Window.DrawLine(500, 100, 60, 400, SDL::Color(255, 0, 255));
 
@@ -73,7 +80,7 @@ int main(int argc, char** argv) {
 
     SDL_Window.DrawString(500, 400, 20, "Hello SimpleSDL", SDL::Color(255, 255, 255));
 
-    SDL_Window.Flip(&SDL_Window);   // Draw Window
+    SDL_Window.Flip();   // Draw Window
 
     SDL::Time::Delay(5000); // Waiting
 
