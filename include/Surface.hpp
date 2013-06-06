@@ -17,15 +17,22 @@ struct SDL_Surface;
 namespace SDL {
 
     class Surface {
-    public:
+    protected:
 
         SDL_Surface* surface;
+
+    public:
 
         Surface();
         Surface(const Surface& orig);
         virtual ~Surface();
 
+        Surface& operator=(const Surface& orig);
+
     public:
+
+        void NewSurface(const int width, const int heigth);
+
         SDL_Surface* GetSurface();
 
         void Clear() {

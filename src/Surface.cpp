@@ -11,7 +11,6 @@
 #include "SDL/SDL.h"
 #include "SDL/SDL_gfxPrimitives.h"
 
-
 namespace SDL {
 
     Surface::Surface() {
@@ -19,11 +18,27 @@ namespace SDL {
     }
 
     Surface::Surface(const Surface& orig) {
-        // XXX: Copy Constructor
+        *this = orig; // FIXME: Not Tested, correct?
     }
 
     Surface::~Surface() {
-        // XXX: Gabage collecting?
+        SDL_FreeSurface(this->surface);
+    }
+
+    Surface& Surface::operator=(const Surface& orig) {
+        if (this == &orig) {
+            return *this;
+        }
+
+        SDL_FreeSurface(this->surface);
+        this->surface = NULL;
+
+        SDL_BlitSurface(orig.surface, NULL, this->surface, NULL);
+        return *this;
+    }
+
+    void Surface::NewSurface(const int width, const int heigth) {
+        this->surface = SDL_CreateRGBSurface(SDL_SWSURFACE, width, heigth, 16, 0, 0, 0, 0);
     }
 
     SDL_Surface* Surface::GetSurface() {

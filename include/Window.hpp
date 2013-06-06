@@ -20,7 +20,7 @@ namespace SDL {
         Window();
         virtual ~Window();
 
-        void Flip(SDL::Surface *FlipSurface);
+        void Flip(); // Update Window
 
         void SetName(const std::string Name);
 

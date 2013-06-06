@@ -58,8 +58,6 @@ namespace SDL {
         uint8_t BlueColor;
         uint8_t AlphaColor;
 
-    public:
-
     };
 
     namespace ColorList {
