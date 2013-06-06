@@ -9,6 +9,7 @@
 #define	SSDL_SURFACE_H
 
 #include "Color.hpp"
+
 #include <string>
 
 struct SDL_Surface;
@@ -16,7 +17,7 @@ struct SDL_Surface;
 namespace SDL {
 
     class Surface {
-    protected:
+    public:
 
         SDL_Surface* surface;
 
@@ -28,22 +29,20 @@ namespace SDL {
         SDL_Surface* GetSurface();
 
         void Clear() {
-            this->Fill(SDL::Color());
+            this->Fill(SDL::ColorList::Black);
         }
 
-        void DrawString(int x, int y, int size, std::string Text, SDL::Color Color);
+        void DrawString(const int x, const int y, const int size, const std::string Text, const SDL::Color Color);
 
-        void DrawLine(int x1, int y1, int x2, int y2, SDL::Color Color);
-        void DrawRect(int x, int y, int w, int h, SDL::Color Color);
-        void DrawCircle(int x, int y, int r, SDL::Color Color);
-        void DrawEllipse(int x, int y, int rx, int ry, SDL::Color Color);
+        void DrawLine(const int x1, const int y1, const int x2, const int y2, const SDL::Color Color);
+        void DrawRect(const int x1, const int y1, const int x2, const int y2, const SDL::Color Color);
+        void DrawCircle(const int x, const int y, const int r, const SDL::Color Color);
+        void DrawEllipse(const int x, const int y, const int rx, const int ry, const SDL::Color Color);
 
-        void Fill(SDL::Color Color);
-        void DrawFilledRect(int x, int y, int w, int h, SDL::Color Color);
-        void DrawFilledCircle(int x, int y, int r, SDL::Color Color);
-        void DrawFilledEllipse(int x, int y, int rx, int ry, SDL::Color Color);
-
-    private:
+        void Fill(const SDL::Color Color);
+        void DrawFilledRect(const int x1, const int y1, const int x2, const int y2, const SDL::Color Color);
+        void DrawFilledCircle(const int x, const int y, const int r, const SDL::Color Color);
+        void DrawFilledEllipse(const int x, const int y, const int rx, const int ry, const SDL::Color Color);
 
     };
 

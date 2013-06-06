@@ -19,7 +19,7 @@ namespace SDL {
     }
 
     Surface::Surface(const Surface& orig) {
-
+        // XXX: Copy Constructor
     }
 
     Surface::~Surface() {
@@ -30,49 +30,41 @@ namespace SDL {
         return this->surface;
     }
 
-    void Surface::DrawString(int x, int y, int size, std::string Text, SDL::Color Color) {
+    void Surface::DrawString(const int x, const int y, const int size, const std::string Text, const SDL::Color Color) {
         //        gfxPrimitivesSetFont(&SDL_gfx_font_9x18B_fnt, 9, 18); // TODO: SDL_ttf?
-        stringRGBA(this->surface, x, y, Text.c_str(), Color.GetRed(), Color.GetGreen(), Color.GetBlue(), 255);
+        stringRGBA(this->surface, x, y, Text.c_str(), Color.GetRed(), Color.GetGreen(), Color.GetBlue(), Color.GetAlpha());
     }
 
-    void Surface::DrawLine(int x1, int y1, int x2, int y2, SDL::Color Color) {
-        lineRGBA(this->surface, x1, y1, x2, y2, Color.GetRed(), Color.GetGreen(), Color.GetBlue(), 255);
+    void Surface::DrawLine(const int x1, const int y1, const int x2, const int y2, const SDL::Color Color) {
+        lineRGBA(this->surface, x1, y1, x2, y2, Color.GetRed(), Color.GetGreen(), Color.GetBlue(), Color.GetAlpha());
     }
 
-    void Surface::DrawRect(int x, int y, int w, int h, SDL::Color Color) {
-        rectangleRGBA(this->surface, x, y, x + w, y + h, Color.GetRed(), Color.GetGreen(), Color.GetBlue(), 255);
+    void Surface::DrawRect(const int x1, const int y1, const int x2, const int y2, const SDL::Color Color) {
+        rectangleRGBA(this->surface, x1, y1, x2, y2, Color.GetRed(), Color.GetGreen(), Color.GetBlue(), Color.GetAlpha());
     }
 
-    void Surface::DrawCircle(int x, int y, int r, SDL::Color Color) {
-        aacircleRGBA(this->surface, x, y, r, Color.GetRed(), Color.GetGreen(), Color.GetBlue(), 255);
+    void Surface::DrawCircle(const int x, const int y, const int r, const SDL::Color Color) {
+        aacircleRGBA(this->surface, x, y, r, Color.GetRed(), Color.GetGreen(), Color.GetBlue(), Color.GetAlpha());
     }
 
-    void Surface::DrawEllipse(int x, int y, int rx, int ry, SDL::Color Color) {
-        ellipseRGBA(this->surface, x, y, rx, ry, Color.GetRed(), Color.GetGreen(), Color.GetBlue(), 255);
+    void Surface::DrawEllipse(const int x, const int y, const int rx, const int ry, const SDL::Color Color) {
+        ellipseRGBA(this->surface, x, y, rx, ry, Color.GetRed(), Color.GetGreen(), Color.GetBlue(), Color.GetAlpha());
     }
 
-    void Surface::Fill(SDL::Color Color) {
-
-        SDL_FillRect(this->surface, NULL, SDL_MapRGB(this->surface->format, Color.GetRed(), Color.GetGreen(), Color.GetBlue()));
+    void Surface::Fill(const SDL::Color Color) {
+        this->DrawFilledRect(0, 0, this->surface->w, this->surface->h, Color);
     }
 
-    void Surface::DrawFilledRect(int x, int y, int w, int h, SDL::Color Color) {
-
-        SDL_Rect Rect;
-        Rect.x = x;
-        Rect.y = y;
-        Rect.w = w;
-        Rect.h = h;
-
-        SDL_FillRect(this->surface, &Rect, SDL_MapRGB(this->surface->format, Color.GetRed(), Color.GetGreen(), Color.GetBlue()));
+    void Surface::DrawFilledRect(const int x1, const int y1, const int x2, const int y2, const SDL::Color Color) {
+        boxRGBA(this->surface, x1, y1, x2, y2, Color.GetRed(), Color.GetGreen(), Color.GetBlue(), Color.GetAlpha());
     }
 
-    void Surface::DrawFilledCircle(int x, int y, int r, SDL::Color Color) {
+    void Surface::DrawFilledCircle(const int x, const int y, const int r, const SDL::Color Color) {
 
-        filledCircleRGBA(this->surface, x, y, r, Color.GetRed(), Color.GetGreen(), Color.GetBlue(), 255);
+        filledCircleRGBA(this->surface, x, y, r, Color.GetRed(), Color.GetGreen(), Color.GetBlue(), Color.GetAlpha());
     }
 
-    void Surface::DrawFilledEllipse(int x, int y, int rx, int ry, SDL::Color Color) {
-        filledEllipseRGBA(this->surface, x, y, rx, ry, Color.GetRed(), Color.GetGreen(), Color.GetBlue(), 255);
+    void Surface::DrawFilledEllipse(const int x, const int y, const int rx, const int ry, const SDL::Color Color) {
+        filledEllipseRGBA(this->surface, x, y, rx, ry, Color.GetRed(), Color.GetGreen(), Color.GetBlue(), Color.GetAlpha());
     }
 }

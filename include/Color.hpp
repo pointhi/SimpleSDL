@@ -35,19 +35,19 @@ namespace SDL {
             this->AlphaColor = Value;
         }
 
-        uint8_t GetRed() {
+        uint8_t GetRed() const {
             return this->RedColor;
         }
 
-        uint8_t GetGreen() {
+        uint8_t GetGreen() const {
             return this->GreenColor;
         }
 
-        uint8_t GetBlue() {
+        uint8_t GetBlue() const {
             return this->BlueColor;
         }
 
-        uint8_t GetAlpha() {
+        uint8_t GetAlpha() const {
             return this->AlphaColor;
         }
 
