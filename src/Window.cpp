@@ -33,8 +33,8 @@ namespace SDL {
         }
     }
 
-    void Window::Flip(SDL::Surface *FlipSurface) {
-        SDL_Flip(FlipSurface->GetSurface());
+    void Window::Flip() {
+        SDL_Flip(this->surface);
     }
 
     void Window::SetName(const std::string Name) {
