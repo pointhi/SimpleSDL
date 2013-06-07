@@ -27,6 +27,7 @@ namespace SDL {
         SDL::General::Init();
 
         this->Surface::surface = SDL_SetVideoMode(Width, Height, 16, SDL_HWSURFACE | SDL_DOUBLEBUF);
+        this->Fullscreen = false;
 
         if (this->Surface::surface == NULL) {
             //            fprintf(stderr, "Unable to set video mode: %s\n", SDL_GetError());

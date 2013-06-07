@@ -33,19 +33,24 @@ namespace SDL {
             this->Fill(SDL::ColorList::Black);
         }
 
+        void DrawSurface(const int x, const int y, const DrawingArea& Surface);
+
         void DrawString(const int x, const int y, const int size, const std::string Text, const SDL::Color Color);
 
         void DrawImage(const int x, const int y, const SDL::Image& ImageData);
 
         void DrawLine(const int x1, const int y1, const int x2, const int y2, const SDL::Color Color);
+        void DrawThickLine(const int x1, const int y1, const int x2, const int y2, const int width, const SDL::Color Color);
         void DrawRect(const int x1, const int y1, const int x2, const int y2, const SDL::Color Color);
         void DrawCircle(const int x, const int y, const int r, const SDL::Color Color);
         void DrawEllipse(const int x, const int y, const int rx, const int ry, const SDL::Color Color);
+        void DrawTriangle(const int x1, const int y1, const int x2, const int y2, const int x3, const int y3, const SDL::Color Color);
 
         void Fill(const SDL::Color Color);
         void DrawFilledRect(const int x1, const int y1, const int x2, const int y2, const SDL::Color Color);
         void DrawFilledCircle(const int x, const int y, const int r, const SDL::Color Color);
         void DrawFilledEllipse(const int x, const int y, const int rx, const int ry, const SDL::Color Color);
+        void DrawFilledTriangle(const int x1, const int y1, const int x2, const int y2, const int x3, const int y3, const SDL::Color Color);
 
     };
 }
