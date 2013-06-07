@@ -16,17 +16,17 @@
 
 namespace SDL {
 
-    Window::Window() {
-        this->Init();
+    Window::Window(const unsigned int Width, const unsigned int Height) {
+        this->Init(Width, Height);
     }
 
     Window::~Window() {
     }
 
-    void Window::Init() {
+    void Window::Init(const unsigned int Width, const unsigned int Height) {
         SDL::General::Init();
 
-        this->Surface::surface = SDL_SetVideoMode(800, 600, 16, SDL_HWSURFACE | SDL_DOUBLEBUF);
+        this->Surface::surface = SDL_SetVideoMode(Width, Height, 16, SDL_HWSURFACE | SDL_DOUBLEBUF);
 
         if (this->Surface::surface == NULL) {
             //            fprintf(stderr, "Unable to set video mode: %s\n", SDL_GetError());

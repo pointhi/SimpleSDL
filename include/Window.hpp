@@ -20,7 +20,7 @@ namespace SDL {
 
         bool Fullscreen;
     public:
-        Window();
+        Window(const unsigned int Width = 800, const unsigned int Height = 600);
         virtual ~Window();
 
         void Flip(); // Update Window
@@ -40,7 +40,7 @@ namespace SDL {
     private:
 
         Window(const Window& orig);
-        void Init();
+        void Init(const unsigned int Width, const unsigned int Height);
 
     };
 
