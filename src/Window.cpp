@@ -38,6 +38,18 @@ namespace SDL {
         SDL_Flip(this->surface);
     }
 
+    void Window::SetFullscreen(bool Fullscreen) {
+        if (Fullscreen != this->Fullscreen) {
+            SDL_WM_ToggleFullScreen(this->Surface::surface);
+            this->Fullscreen = Fullscreen;
+        }
+    }
+
+    void Window::ToggleFullscreen() {
+        SDL_WM_ToggleFullScreen(this->Surface::surface);
+        this->Fullscreen = !this->Fullscreen;
+    }
+
     void Window::SetName(const std::string Name) {
         SDL_WM_SetCaption(Name.c_str(), NULL);
     }

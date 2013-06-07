@@ -16,6 +16,9 @@ namespace SDL {
     class Surface;
 
     class Window : public SDL::DrawingArea {
+    private:
+
+        bool Fullscreen;
     public:
         Window();
         virtual ~Window();
@@ -23,6 +26,11 @@ namespace SDL {
         void Flip(); // Update Window
 
         void SetName(const std::string Name);
+
+    public:
+
+        void SetFullscreen(bool Fullscreen);
+        void ToggleFullscreen();
 
     public:
 

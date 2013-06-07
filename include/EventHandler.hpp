@@ -138,6 +138,7 @@ namespace SDL {
             const int DELETE = SDLK_DELETE;
             const int LSHIFT = SDLK_LSHIFT;
             const int RSHIFT = SDLK_RSHIFT;
+            const int SPACE = SDLK_SPACE;
         }
 
         namespace Keypad {
