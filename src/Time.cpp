@@ -15,4 +15,8 @@ namespace SDL {
         SDL_Delay(Time);
     }
 
+    long int Time::GetTicks() {
+        return SDL_GetTicks();
+    }
+
 }

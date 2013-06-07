@@ -8,6 +8,7 @@
 #include "../include/Window.hpp"
 #include "../include/General.hpp"
 #include "../include/Surface.hpp"
+#include "../include/Time.hpp"
 #include <iostream>
 #include <string>
 #include <stdint.h>
@@ -28,7 +29,8 @@ namespace SDL {
 
         this->Surface::surface = SDL_SetVideoMode(Width, Height, 16, SDL_HWSURFACE | SDL_DOUBLEBUF);
         this->Fullscreen = false;
-
+        this->LastDisplayUpdate = SDL::Time::GetTicks();
+        this->FPS = 0;
         if (this->Surface::surface == NULL) {
             //            fprintf(stderr, "Unable to set video mode: %s\n", SDL_GetError());
             throw 1;
@@ -37,6 +39,9 @@ namespace SDL {
 
     void Window::Flip() {
         SDL_Flip(this->surface);
+
+        this->FPS = 1000 / (SDL::Time::GetTicks() - this->LastDisplayUpdate);
+        this->LastDisplayUpdate = SDL::Time::GetTicks();
     }
 
     void Window::SetFullscreen(bool Fullscreen) {

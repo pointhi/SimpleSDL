@@ -15,6 +15,8 @@ namespace SDL {
 
         static void Delay(unsigned int Time);
 
+        static long int GetTicks();
+
     private:
         Time();
 

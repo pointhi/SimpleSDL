@@ -19,6 +19,8 @@ namespace SDL {
     private:
 
         bool Fullscreen;
+        long int LastDisplayUpdate;
+        int FPS;
     public:
         Window(const unsigned int Width = 800, const unsigned int Height = 600);
         virtual ~Window();
@@ -36,6 +38,10 @@ namespace SDL {
 
         uint8_t GetMouseState(int* x, int* y) const;
         int GetKeyboardButton(const int Key) const;
+
+        int GetFps() {
+            return this->FPS;
+        }
 
     private:
 
