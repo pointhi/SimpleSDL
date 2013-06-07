@@ -35,20 +35,16 @@ The Library only support one Window!, when you generate more than one you can be
 - [x] Drawing simple Graphic structures
 - [x] Drawing Text
 - [x] Simple Delay Function
-- [ ] Event-Handler
-- [ ] Images
+- [x] Event-Handler
+- [x] Images
 - [ ] More Fonts
 - [ ] Simple GUI-System
 - [ ] Screenshot
 - [ ] Debug-Window
 
-##Bugs
-
-- Surface alone wouldn't worke
-
 ##Example Programm
 
-This Programm draw different graphic structures on a window for 5 seconds
+This Programm draw different graphic structures on a window, and close when you press ESC or klick on the Close Button
 
 ```C++
 /*
@@ -61,28 +57,52 @@ This Programm draw different graphic structures on a window for 5 seconds
 
 #include <SimpleSDL.hpp>
 
+signed int Loop = 1;
+
+void CloseEvent(int Event) {
+    Loop = 0;
+}
+
+void KeyboardEvents(int Key) {
+    switch (Key) {
+        case SDL::Keyboard::Special::ESC:
+            Loop = 0;
+            break;
+        default:
+            break;
+    }
+
+}
+
 int main(int argc, char** argv) {
 
     SDL::Window SDL_Window; // Open Window
     SDL_Window.SetName("Test Programm for SimpleSDL by Thomas Pointhuber");
 
-    SDL_Window.Clear();     // Clear Window-Surface
+    SDL::EventHandler Events;
 
-    SDL_Window.DrawFilledRect(20, 20, 80, 80, SDL::Color(255, 255, 0));
+    Events.SetCloseEventFunction(CloseEvent);   // Define Event-Function when press Close-Button
+    Events.SetKeyboardDownEventFunction(KeyboardEvents);    // Define Event-Function for Keyboard pressing
 
-    SDL_Window.DrawFilledCircle(200, 200, 80, SDL::ColorList::White);
+    while (Loop) {
 
-    SDL_Window.DrawLine(500, 100, 60, 400, SDL::Color(255, 0, 255));
+        SDL_Window.Clear();     // Clear Window-Surface
 
-    SDL_Window.DrawRect(200, 40, 80, 80, SDL::Color(255, 255, 0));
+        SDL_Window.DrawFilledRect(20, 20, 80, 80, SDL::Color(255, 255, 0));
 
-    SDL_Window.DrawFilledEllipse(500, 200, 50, 80, SDL::Color(255, 0, 0));
+        SDL_Window.DrawFilledCircle(200, 200, 80, SDL::ColorList::White);
 
-    SDL_Window.DrawString(500, 400, 20, "Hello SimpleSDL", SDL::Color(255, 255, 255));
+        SDL_Window.DrawLine(500, 100, 60, 400, SDL::Color(255, 0, 255));
 
-    SDL_Window.Flip();   // Draw Window
+        SDL_Window.DrawRect(200, 40, 80, 80, SDL::Color(255, 255, 0));
 
-    SDL::Time::Delay(5000); // Waiting
+        SDL_Window.DrawFilledEllipse(500, 200, 50, 80, SDL::Color(255, 0, 0));
+
+        SDL_Window.DrawString(500, 400, 20, "Hello SimpleSDL", SDL::Color(255, 255, 255));
+
+        SDL_Window.Flip();   // Draw Window
+
+    }
 
     return 0;
 }

@@ -14,6 +14,7 @@
 #include "Surface.hpp"
 #include "Window.hpp"
 #include "Image.hpp"
+#include "EventHandler.hpp"
 
 #endif	/* SIMPLESDL_HPP */
 

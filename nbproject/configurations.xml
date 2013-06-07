@@ -5,8 +5,8 @@
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/Color.hpp</itemPath>
-      <itemPath>/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/DrawingArea.cpp</itemPath>
       <itemPath>/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/DrawingArea.hpp</itemPath>
+      <itemPath>/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/EventHandler.hpp</itemPath>
       <itemPath>/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/General.hpp</itemPath>
       <itemPath>/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/Image.hpp</itemPath>
       <itemPath>/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/SimpleSDL.hpp</itemPath>
@@ -22,6 +22,8 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Color.cpp</itemPath>
+      <itemPath>/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/DrawingArea.cpp</itemPath>
+      <itemPath>/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/EventHandler.cpp</itemPath>
       <itemPath>/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/General.cpp</itemPath>
       <itemPath>/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Image.cpp</itemPath>
       <itemPath>/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Surface.cpp</itemPath>
@@ -73,6 +75,11 @@
             tool="3"
             flavor2="0">
       </item>
+      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/EventHandler.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/General.hpp"
             ex="false"
             tool="3"
@@ -104,6 +111,11 @@
             flavor2="0">
       </item>
       <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/DrawingArea.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/EventHandler.cpp"
             ex="false"
             tool="1"
             flavor2="0">
@@ -170,6 +182,11 @@
             tool="3"
             flavor2="0">
       </item>
+      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/EventHandler.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/General.hpp"
             ex="false"
             tool="3"
@@ -201,6 +218,11 @@
             flavor2="0">
       </item>
       <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/DrawingArea.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/EventHandler.cpp"
             ex="false"
             tool="1"
             flavor2="0">
