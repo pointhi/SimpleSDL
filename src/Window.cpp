@@ -10,6 +10,7 @@
 #include "../include/Surface.hpp"
 #include <iostream>
 #include <string>
+#include <stdint.h>
 
 #include "SDL/SDL.h"
 
@@ -39,6 +40,16 @@ namespace SDL {
 
     void Window::SetName(const std::string Name) {
         SDL_WM_SetCaption(Name.c_str(), NULL);
+    }
+
+    uint8_t Window::GetMouseState(int* x, int* y) const {
+        return SDL_GetMouseState(x, y);
+    }
+
+    int Window::GetKeyboardButton(const int Key) const {
+        uint8_t *allButtons = SDL_GetKeyState(NULL);
+
+        return allButtons[Key];
     }
 
 }

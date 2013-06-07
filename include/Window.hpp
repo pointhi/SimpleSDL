@@ -10,7 +10,7 @@
 
 #include "DrawingArea.hpp"
 #include <string>
-
+#include <stdint.h>
 namespace SDL {
 
     class Surface;
@@ -23,6 +23,11 @@ namespace SDL {
         void Flip(); // Update Window
 
         void SetName(const std::string Name);
+
+    public:
+
+        uint8_t GetMouseState(int* x, int* y) const;
+        int GetKeyboardButton(const int Key) const;
 
     private:
 
