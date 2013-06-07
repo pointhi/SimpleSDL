@@ -86,6 +86,8 @@ int main(int argc, char** argv) {
 
     while (Loop) {
 
+        Events.CollectEvents(); // Call Event-Handler
+
         SDL_Window.Clear();     // Clear Window-Surface
 
         SDL_Window.DrawFilledRect(20, 20, 80, 80, SDL::Color(255, 255, 0));
