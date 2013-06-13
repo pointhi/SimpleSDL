@@ -71,7 +71,12 @@ namespace SDL {
     }
 
     void DrawingArea::DrawThickLine(const int x1, const int y1, const int x2, const int y2, const int width, const SDL::Color Color) {
-        thickLineRGBA(this->surface, x1, y1, x2, y2, width, Color.GetRed(), Color.GetGreen(), Color.GetBlue(), Color.GetAlpha());
+        if (x1 <= x2) {
+            thickLineRGBA(this->surface, x1, y1, x2, y2, width, Color.GetRed(), Color.GetGreen(), Color.GetBlue(), Color.GetAlpha());
+        } else {
+            thickLineRGBA(this->surface, x2, y2, x1, y1, width, Color.GetRed(), Color.GetGreen(), Color.GetBlue(), Color.GetAlpha());
+        }
+
     }
 
     void DrawingArea::DrawRect(const int x1, const int y1, const int x2, const int y2, const SDL::Color Color) {
