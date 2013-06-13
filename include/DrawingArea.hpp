@@ -33,11 +33,9 @@ namespace SDL {
             this->Fill(SDL::ColorList::Black);
         }
 
-        void DrawSurface(const int x, const int y, const DrawingArea& Surface);
+        void DrawSurface(const int x, const int y, const Surface& Surface);
 
         void DrawString(const int x, const int y, const int size, const std::string Text, const SDL::Color Color);
-
-        void DrawImage(const int x, const int y, const SDL::Image& ImageData);
 
         void DrawLine(const int x1, const int y1, const int x2, const int y2, const SDL::Color Color);
         void DrawThickLine(const int x1, const int y1, const int x2, const int y2, const int width, const SDL::Color Color);
