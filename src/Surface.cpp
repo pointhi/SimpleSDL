@@ -47,4 +47,8 @@ namespace SDL {
 
         this->surface = SDL_CreateRGBSurface(SDL_SWSURFACE, width, heigth, 16, 0, 0, 0, 0);
     }
+
+    void Surface::SetTransparentColor(const SDL::Color Color) {
+        SDL_SetColorKey(this->surface, SDL_SRCCOLORKEY, SDL_MapRGB(this->surface->format, Color.GetRed(), Color.GetGreen(), Color.GetBlue()));
+    }
 }

@@ -8,6 +8,8 @@
 #ifndef SSDL_SURFACE_H
 #define	SSDL_SURFACE_H
 
+#include "Color.hpp"
+
 struct SDL_Surface;
 
 namespace SDL {
@@ -30,6 +32,8 @@ namespace SDL {
 
         void NewSurface(const int width, const int heigth);
         SDL_Surface* GetSurface() const;
+
+        void SetTransparentColor(const SDL::Color Color);
 
     };
 
