@@ -9,14 +9,13 @@
 #define	SSDL_DRAWINGAREA_HPP
 
 #include "Surface.hpp"
-//#include "Image.hpp"
 #include "Color.hpp"
 
 #include <string>
 
 namespace SDL {
 
-    class Image;
+    //    class Surface;
 
     class DrawingArea : public SDL::Surface {
     public:
@@ -37,6 +36,7 @@ namespace SDL {
 
         void DrawString(const int x, const int y, const int size, const std::string Text, const SDL::Color Color);
 
+        void DrawPixel(const int x, const int y, const SDL::Color Color);
         void DrawLine(const int x1, const int y1, const int x2, const int y2, const SDL::Color Color);
         void DrawThickLine(const int x1, const int y1, const int x2, const int y2, const int width, const SDL::Color Color);
         void DrawRect(const int x1, const int y1, const int x2, const int y2, const SDL::Color Color);

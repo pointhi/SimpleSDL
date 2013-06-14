@@ -50,6 +50,10 @@ namespace SDL {
         stringRGBA(this->surface, x, y, Text.c_str(), Color.GetRed(), Color.GetGreen(), Color.GetBlue(), Color.GetAlpha());
     }
 
+    void DrawingArea::DrawPixel(const int x, const int y, const SDL::Color Color) {
+        pixelRGBA(this->surface, x, y, Color.GetRed(), Color.GetGreen(), Color.GetBlue(), Color.GetAlpha());
+    }
+
     void DrawingArea::DrawLine(const int x1, const int y1, const int x2, const int y2, const SDL::Color Color) {
         lineRGBA(this->surface, x1, y1, x2, y2, Color.GetRed(), Color.GetGreen(), Color.GetBlue(), Color.GetAlpha());
     }
