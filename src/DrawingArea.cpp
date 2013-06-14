@@ -25,10 +25,6 @@ namespace SDL {
     DrawingArea::~DrawingArea() {
     }
 
-    void DrawingArea::NewSurface(const int width, const int heigth) {
-        this->surface = SDL_CreateRGBSurface(SDL_SWSURFACE, width, heigth, 16, 0, 0, 0, 0);
-    }
-
     void DrawingArea::DrawSurface(const int x, const int y, const Surface& Surface) {
         SDL_Rect src, dest;
 

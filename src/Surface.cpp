@@ -40,4 +40,11 @@ namespace SDL {
     SDL_Surface* Surface::GetSurface() const {
         return this->surface;
     }
+
+    void Surface::NewSurface(const int width, const int heigth) {
+        SDL_FreeSurface(this->surface);
+        this->surface = NULL;
+
+        this->surface = SDL_CreateRGBSurface(SDL_SWSURFACE, width, heigth, 16, 0, 0, 0, 0);
+    }
 }

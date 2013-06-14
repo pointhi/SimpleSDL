@@ -27,6 +27,8 @@ namespace SDL {
 
     public:
 
+
+        void NewSurface(const int width, const int heigth);
         SDL_Surface* GetSurface() const;
 
     };
