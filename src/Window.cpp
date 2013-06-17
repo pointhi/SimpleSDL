@@ -18,16 +18,19 @@
 namespace SDL {
 
     Window::Window(const unsigned int Width, const unsigned int Height) {
+        std::cout << "Constructor: Window" << std::endl;
         this->Init(Width, Height);
     }
 
     Window::~Window() {
+
+        std::cout << "Destructor: Window" << std::endl;
     }
 
     void Window::Init(const unsigned int Width, const unsigned int Height) {
         SDL::General::Init();
 
-        this->Surface::surface = SDL_SetVideoMode(Width, Height, 16, SDL_HWSURFACE | SDL_DOUBLEBUF);
+        this->Surface::surface = SDL_SetVideoMode(Width, Height, 16, SDL_HWSURFACE | SDL_DOUBLEBUF | SDL_HWPALETTE);
         this->Fullscreen = false;
         this->LastDisplayUpdate = SDL::Time::GetTicks();
         this->FPS = 0;

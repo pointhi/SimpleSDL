@@ -14,15 +14,20 @@
 #include "../include/Surface.hpp"
 #include "../include/Image.hpp"
 
+#include "iostream"
+
+
 namespace SDL {
 
     DrawingArea::DrawingArea() {
+        std::cout << "Constructor: Drawing Area" << std::endl;
     }
 
     DrawingArea::DrawingArea(const DrawingArea& orig) {
     }
 
     DrawingArea::~DrawingArea() {
+        std::cout << "Destructor: Drawing Area" << std::endl;
     }
 
     void DrawingArea::DrawSurface(const int x, const int y, const Surface& Surface) {

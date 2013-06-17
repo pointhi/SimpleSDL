@@ -14,6 +14,8 @@
 
 namespace SDL {
 
+    //! Working with the SDL_Event-Handler
+
     class EventHandler {
     private:
 
@@ -31,27 +33,35 @@ namespace SDL {
 
     public:
 
+        //! Check Events
         void CollectEvents();
 
-        void SetKeyboardDownEventFunction(void (*KeyboardDownEventFunction)(int)) {
+        //! Set the Function who will be called when an Keyboard-Down Event occured
 
+        void SetKeyboardDownEventFunction(void (*KeyboardDownEventFunction)(int)) {
             this->KeyboardDownEventFunction = KeyboardDownEventFunction;
         }
 
-        void SetKeyboardUpEventFunction(void (*KeyboardUpEventFunction)(int)) {
+        //! Set the Function who will be called when an Keyboard-Up Event occured
 
+        void SetKeyboardUpEventFunction(void (*KeyboardUpEventFunction)(int)) {
             this->KeyboardUpEventFunction = KeyboardUpEventFunction;
         }
 
-        void SetMouseEventFunction(void (*MouseEventFunction)(int)) {
+        //! Set the Function who will be called when an Mouse Event occured
 
+        void SetMouseEventFunction(void (*MouseEventFunction)(int)) {
             this->MouseEventFunction = MouseEventFunction;
         }; // Clicks
+
+        //! Set the Function who will be called when an System Event occured
 
         void SetSystemEventFunction(void (*SystemEventFunction)(int)) {
 
             this->SystemEventFunction = SystemEventFunction;
         } // Quite, Rezise,...
+
+        //! Set the Function who will be called when an Close Event occured
 
         void SetCloseEventFunction(void (*CloseEventFunction)(int)) {
             this->CloseEventFunction = CloseEventFunction;
@@ -63,7 +73,10 @@ namespace SDL {
         EventHandler(const EventHandler & orig);
     };
 
+    //! Represent the Keys of a Keyboard
+
     namespace Keyboard {
+        //! The Alphapet Keys
         namespace Char {
             const int A = SDLK_a;
             const int B = SDLK_b;
@@ -93,6 +106,8 @@ namespace SDL {
             const int Z = SDLK_z;
         }
 
+        //! Numeric-Keys on top
+
         namespace Num {
             const int _0 = SDLK_0;
             const int _1 = SDLK_1;
@@ -105,6 +120,8 @@ namespace SDL {
             const int _8 = SDLK_8;
             const int _9 = SDLK_9;
         }
+
+        //! F-Keys
 
         namespace Func {
             const int F1 = SDLK_F1;
@@ -121,12 +138,16 @@ namespace SDL {
             const int F12 = SDLK_F12;
         }
 
+        //! Arrows
+
         namespace Arrow {
             const int UP = SDLK_UP;
             const int DOWN = SDLK_DOWN;
             const int RIGHT = SDLK_RIGHT;
             const int LEFT = SDLK_LEFT;
         }
+
+        //! Special like space, esc,...
 
         namespace Special {
             const int ESC = SDLK_ESCAPE;
@@ -140,6 +161,8 @@ namespace SDL {
             const int RSHIFT = SDLK_RSHIFT;
             const int SPACE = SDLK_SPACE;
         }
+
+        //! Buttons on the Keypad
 
         namespace Keypad {
             const int _0 = SDLK_KP0;

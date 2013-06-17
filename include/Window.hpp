@@ -15,6 +15,8 @@ namespace SDL {
 
     class Surface;
 
+    //! Make a SDL-Window and made it editable
+
     class Window : public SDL::DrawingArea {
     private:
 
@@ -25,19 +27,28 @@ namespace SDL {
         Window(const unsigned int Width = 800, const unsigned int Height = 600);
         virtual ~Window();
 
-        void Flip(); // Update Window
+        //! Update Window
+        void Flip();
 
+        //! Set Window-Name
         void SetName(const std::string Name);
 
     public:
 
+        //! Set Fullscreen-Mode for Window
         void SetFullscreen(bool Fullscreen);
+
+        //! Toggle the Fullscreen-Mode
         void ToggleFullscreen();
 
     public:
-
+        //! Get Mouse Position
         uint8_t GetMouseState(int* x, int* y) const;
+
+        //! Check Key
         int GetKeyboardButton(const int Key) const;
+
+        //! Get Update-Rate from Window
 
         int GetFps() {
             return this->FPS;

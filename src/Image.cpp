@@ -26,7 +26,7 @@ namespace SDL {
         SDL_Surface *temp;
         temp = SDL_LoadBMP(Filepath.c_str());
 
-        std::cout << Filepath;
+        //        std::cout << Filepath;
 
         if (temp == NULL) {
             //            printf("Unable to load bitmap: %s\n", SDL_GetError());

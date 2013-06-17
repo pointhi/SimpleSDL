@@ -10,9 +10,12 @@
 
 namespace SDL {
 
+    //! General SDL-Functions
+
     class General {
     public:
 
+        //! Init SDL-Subsystems
         static void Init();
 
     private:

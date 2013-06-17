@@ -10,11 +10,15 @@
 
 namespace SDL {
 
+    //! Working with Time-Functions
+
     class Time {
     public:
 
+        //! Made a simple Delay
         static void Delay(unsigned int Time);
 
+        //! Get Milliseconds since program-start
         static long int GetTicks();
 
     private:

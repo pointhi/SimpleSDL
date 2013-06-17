@@ -12,6 +12,8 @@
 
 namespace SDL {
 
+    //! Represent a Color Value
+
     class Color {
     public:
 
@@ -59,6 +61,8 @@ namespace SDL {
         uint8_t AlphaColor;
 
     };
+
+    //! Represent simple Color-Values
 
     namespace ColorList {
 

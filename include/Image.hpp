@@ -16,12 +16,15 @@
 
 namespace SDL {
 
+    //! Represent a Image
+
     class Image : public SDL::Surface {
     public:
         Image();
         Image(const Image& orig);
         virtual ~Image();
 
+        //! Load an Image from a *.bmp-file
         void LoadBmp(const std::string Filepath);
 
     };

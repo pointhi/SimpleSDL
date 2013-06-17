@@ -11,10 +11,13 @@
 
 #include "SDL/SDL.h"
 
+#include <iostream>
+
 namespace SDL {
 
     Surface::Surface() {
         this->surface = NULL;
+        std::cout << "Constructor: Surface" << std::endl;
     }
 
     Surface::Surface(const Surface& orig) {
@@ -22,6 +25,7 @@ namespace SDL {
     }
 
     Surface::~Surface() {
+        std::cout << "Destructor: Surface" << std::endl;
         SDL_FreeSurface(this->surface);
     }
 

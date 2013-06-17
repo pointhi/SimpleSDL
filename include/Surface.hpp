@@ -14,6 +14,8 @@ struct SDL_Surface;
 
 namespace SDL {
 
+    //! Manage a SDL_Surface
+
     class Surface {
     protected:
 
@@ -28,11 +30,13 @@ namespace SDL {
         Surface& operator=(const Surface& orig);
 
     public:
-
-
+        //! Create a new Surface
         void NewSurface(const int width, const int heigth);
+
+        //! Get the Pointer of a SDL_Surface
         SDL_Surface* GetSurface() const;
 
+        //! Set the Color who would be transparent
         void SetTransparentColor(const SDL::Color Color);
 
     };
