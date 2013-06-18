@@ -27,29 +27,58 @@ namespace SDL {
         Window(const unsigned int Width = 800, const unsigned int Height = 600);
         virtual ~Window();
 
-        //! Update Window
+        /**
+         * \brief Update Window
+         */
         void Flip();
 
-        //! Set Window-Name
+        /**
+         * \brief Set the Name of the Window
+         *
+         * \param Name The new Name for the Window
+         */
         void SetName(const std::string Name);
 
     public:
 
-        //! Set Fullscreen-Mode for Window
+        /**
+         * \brief Set Fullscreen-Mode for Window
+         *
+         * \param Fullscreen true = Fullscreen, false = Normal screen
+         */
         void SetFullscreen(bool Fullscreen);
 
-        //! Toggle the Fullscreen-Mode
+        /**
+         * \brief Toggle the Fullscreen-Mode
+         */
         void ToggleFullscreen();
 
     public:
-        //! Get Mouse Position
+
+        /**
+         * \brief Get Mouse Position
+         *
+         * \param x Pointer to a Variable which represent the x-coordinate
+         * \param y Pointer to a Variable which represent the y-coordinate
+         *
+         * \return The pressed Buttons as 8-bit integer (not special implementation yet)
+         */
         uint8_t GetMouseState(int* x, int* y) const;
 
-        //! Check Key
+        /**
+         * \brief Check Key
+         *
+         * \param Key The Character which would be tested
+         *
+         * \return The state of the Button (0... not pressed, 1... pressed)
+         */
         int GetKeyboardButton(const int Key) const;
 
-        //! Get Update-Rate from Window
-
+        /**
+         * \brief Get Update-Rate from Window
+         *
+         * \return The amount of refreshes per second
+         */
         int GetFps() {
             return this->FPS;
         }

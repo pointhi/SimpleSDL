@@ -24,7 +24,11 @@ namespace SDL {
         Image(const Image& orig);
         virtual ~Image();
 
-        //! Load an Image from a *.bmp-file
+        /**
+         * \brief Load an Image from a *.bmp-file
+         *
+         * \param Filepath Path to the *.bmp-file
+         */
         void LoadBmp(const std::string Filepath);
 
     };

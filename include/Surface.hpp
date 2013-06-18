@@ -30,13 +30,27 @@ namespace SDL {
         Surface& operator=(const Surface& orig);
 
     public:
-        //! Create a new Surface
+
+        /**
+         * \brief Create a new Surface
+         *
+         * \param width Width of the new Surface
+         * \param heigth Height of the new Surface
+         */
         void NewSurface(const int width, const int heigth);
 
-        //! Get the Pointer of a SDL_Surface
+        /**
+         * \brief Get the Pointer of a SDL_Surface
+         *
+         * \return Get the SDL_Surface from this Class
+         */
         SDL_Surface* GetSurface() const;
 
-        //! Set the Color who would be transparent
+        /**
+         * \brief Set the Color who would be transparent
+         *
+         * \param Color Color who would be not drawed
+         */
         void SetTransparentColor(const SDL::Color Color);
 
     };

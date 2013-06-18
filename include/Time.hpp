@@ -15,10 +15,18 @@ namespace SDL {
     class Time {
     public:
 
-        //! Made a simple Delay
+        /**
+         * \brief Made a simple Delay
+         *
+         * \param Time Amount of Milliseconds which the Programm would be wait
+         */
         static void Delay(unsigned int Time);
 
-        //! Get Milliseconds since program-start
+        /**
+         * \brief Get Milliseconds since program-start
+         *
+         * \return The amount of Time in Milliseconds since program start
+         */
         static long int GetTicks();
 
     private:

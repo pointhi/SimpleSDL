@@ -17,38 +17,92 @@ namespace SDL {
     class Color {
     public:
 
+        /**
+         * \param Red The amount of Red
+         * \param Green The amount of Green
+         * \param Blue The amount of Blue
+         * \param Alpha The amount of Transparent
+         */
         explicit Color(const uint8_t Red = 0, const uint8_t Green = 0, const uint8_t Blue = 0, const uint8_t Alpha = 255);
 
+        /**
+         * \brief Set a new Color
+         *
+         * \param Red The amount of Red
+         * \param Green The amount of Green
+         * \param Blue The amount of Blue
+         * \param Alpha The amount of Transparent
+         */
         void SetColor(const uint8_t Red = 0, const uint8_t Green = 0, const uint8_t Blue = 0, const uint8_t Alpha = 255);
 
+        /**
+         * \brief Set a new Value for Red
+         *
+         * \param Red The amount of Red
+         */
         void SetRed(const uint8_t Value) {
             this->RedColor = Value;
         }
 
+        /**
+         * \brief Set a new Value for Green
+         *
+         * \param Green The amount of Green
+         */
         void SetGreen(const uint8_t Value) {
             this->GreenColor = Value;
         }
 
+        /**
+         * \brief Set a new Value for Blue
+         *
+         * \param Blue The amount of Blue
+         */
         void SetBlue(const uint8_t Value) {
             this->BlueColor = Value;
         }
 
+        /**
+         * \brief Set a new Transparent Value
+         *
+         * \param Alpha The amount of Transparent
+         */
         void SetAlpha(const uint8_t Value) {
             this->AlphaColor = Value;
         }
 
+        /**
+         * \brief Get the amount of Red
+         *
+         * \return The amount of Red
+         */
         uint8_t GetRed() const {
             return this->RedColor;
         }
 
+        /**
+         * \brief Get the amount of Green
+         *
+         * \return The amount of Green
+         */
         uint8_t GetGreen() const {
             return this->GreenColor;
         }
 
+        /**
+         * \brief Get the amount of Blue
+         *
+         * \return The amount of Blue
+         */
         uint8_t GetBlue() const {
             return this->BlueColor;
         }
 
+        /**
+         * \brief Get the amount of the Alpha-Channel
+         *
+         * \return The amount of the Transparent
+         */
         uint8_t GetAlpha() const {
             return this->AlphaColor;
         }

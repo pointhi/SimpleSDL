@@ -36,32 +36,32 @@ namespace SDL {
         //! Check Events
         void CollectEvents();
 
-        //! Set the Function who will be called when an Keyboard-Down Event occured
+        //! Set the Function who will be called when an Keyboard-Down Event occurred
 
         void SetKeyboardDownEventFunction(void (*KeyboardDownEventFunction)(int)) {
             this->KeyboardDownEventFunction = KeyboardDownEventFunction;
         }
 
-        //! Set the Function who will be called when an Keyboard-Up Event occured
+        //! Set the Function who will be called when an Keyboard-Up Event occurred
 
         void SetKeyboardUpEventFunction(void (*KeyboardUpEventFunction)(int)) {
             this->KeyboardUpEventFunction = KeyboardUpEventFunction;
         }
 
-        //! Set the Function who will be called when an Mouse Event occured
+        //! Set the Function who will be called when an Mouse Event occurred
 
         void SetMouseEventFunction(void (*MouseEventFunction)(int)) {
             this->MouseEventFunction = MouseEventFunction;
         }; // Clicks
 
-        //! Set the Function who will be called when an System Event occured
+        //! Set the Function who will be called when an System Event occurred
 
         void SetSystemEventFunction(void (*SystemEventFunction)(int)) {
 
             this->SystemEventFunction = SystemEventFunction;
         } // Quite, Rezise,...
 
-        //! Set the Function who will be called when an Close Event occured
+        //! Set the Function who will be called when an Close Event occurred
 
         void SetCloseEventFunction(void (*CloseEventFunction)(int)) {
             this->CloseEventFunction = CloseEventFunction;

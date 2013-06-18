@@ -15,7 +15,9 @@ namespace SDL {
     class General {
     public:
 
-        //! Init SDL-Subsystems
+        /**
+         * \brief Init SDL-Subsystems
+         */
         static void Init();
 
     private:
