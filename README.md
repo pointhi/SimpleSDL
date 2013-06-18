@@ -1,4 +1,4 @@
-SimpleSDL {#mainpage}
+SimpleSDL  {#mainpage}
 =========
 
 a C++ Library to simplify graphic working with SDL and adding important functions to generate fast simple Graphic Programms and Games
