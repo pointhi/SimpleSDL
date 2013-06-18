@@ -1,8 +1,10 @@
-/*
- * File:   Color.hpp
- * Author: thomas
+/**
+ * \file Color.hpp
  *
- * Created on 5. Juni 2013, 19:56
+ * \author Thomas Pointhuber
+ *
+ * \date 5/6/2013
+ * \copyright GNU General Public License (GPL) 3.0
  */
 
 #ifndef SSDL_COLOR_HPP
@@ -12,7 +14,9 @@
 
 namespace SDL {
 
-    //! Represent a Color Value
+    /**
+     * \brief Represent a Color Value
+     */
 
     class Color {
     public:

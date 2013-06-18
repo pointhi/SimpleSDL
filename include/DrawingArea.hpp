@@ -1,8 +1,10 @@
-/*
- * File:   DrawingArea.hpp
- * Author: thomas
+/**
+ * \file DrawingArea.hpp
  *
- * Created on 6. Juni 2013, 19:53
+ * \author Thomas Pointhuber
+ *
+ * \date 5/6/2013
+ * \copyright GNU General Public License (GPL) 3.0
  */
 
 #ifndef SSDL_DRAWINGAREA_HPP
@@ -15,7 +17,9 @@
 
 namespace SDL {
 
-    //! Represent a Surface and made it editable
+    /**
+     * \brief Represent a Surface and made it editable
+     */
 
     class DrawingArea : public SDL::Surface {
     public:

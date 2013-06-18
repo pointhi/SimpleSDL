@@ -1,8 +1,10 @@
-/*
- * File:   Surface.cpp
- * Author: thomas
+/**
+ * \file Surface.cpp
  *
- * Created on 5. Juni 2013, 18:30
+ * \author Thomas Pointhuber
+ *
+ * \date 5/6/2013
+ * \copyright GNU General Public License (GPL) 3.0
  */
 
 #include "../include/Surface.hpp"

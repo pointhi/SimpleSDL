@@ -1,8 +1,10 @@
-/*
- * File:   EventHandler.hpp
- * Author: thomas
+/**
+ * \file EventHandler.hpp
  *
- * Created on 6. Juni 2013, 22:13
+ * \author Thomas Pointhuber
+ *
+ * \date 6/6/2013
+ * \copyright GNU General Public License (GPL) 3.0
  */
 
 #ifndef SSDL_EVENTHANDLER_HPP
@@ -14,7 +16,9 @@
 
 namespace SDL {
 
-    //! Working with the SDL_Event-Handler
+    /**
+     * \brief Working with the SDL_Event-Handler
+     */
 
     class EventHandler {
     private:

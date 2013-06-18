@@ -1,8 +1,10 @@
-/*
- * File:   General.hpp
- * Author: thomas
+/**
+ * \file General.hpp
  *
- * Created on 5. Juni 2013, 18:04
+ * \author Thomas Pointhuber
+ *
+ * \date 5/6/2013
+ * \copyright GNU General Public License (GPL) 3.0
  */
 
 #ifndef SSDL_GENERAL_HPP
@@ -10,7 +12,9 @@
 
 namespace SDL {
 
-    //! General SDL-Functions
+    /**
+     * \brief General SDL-Functions
+     */
 
     class General {
     public:

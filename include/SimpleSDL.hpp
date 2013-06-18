@@ -1,8 +1,10 @@
-/*
- * File:   SimpleSDL.hpp
- * Author: thomas
+/**
+ * \file SimpleSDL.hpp
  *
- * Created on 5. Juni 2013, 19:09
+ * \author Thomas Pointhuber
+ *
+ * \date 5/6/2013
+ * \copyright GNU General Public License (GPL) 3.0
  */
 
 #ifndef SSDL_SIMPLESDL_HPP

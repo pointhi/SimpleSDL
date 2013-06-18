@@ -1,8 +1,10 @@
-/*
- * File:   Time.cpp
- * Author: thomas
+/**
+ * \file Time.cpp
  *
- * Created on 5. Juni 2013, 19:06
+ * \author Thomas Pointhuber
+ *
+ * \date 5/6/2013
+ * \copyright GNU General Public License (GPL) 3.0
  */
 
 #include "../include/Time.hpp"

@@ -1,8 +1,10 @@
-/*
- * File:   Image.cpp
- * Author: thomas
+/**
+ * \file Image.cpp
  *
- * Created on 6. Juni 2013, 19:23
+ * \author Thomas Pointhuber
+ *
+ * \date 6/6/2013
+ * \copyright GNU General Public License (GPL) 3.0
  */
 
 #include "../include/Image.hpp"

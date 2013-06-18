@@ -1,8 +1,10 @@
-/*
- * File:   Surface.h
- * Author: thomas
+/**
+ * \file Surface.h
  *
- * Created on 5. Juni 2013, 18:30
+ * \author Thomas Pointhuber
+ *
+ * \date 5/6/2013
+ * \copyright GNU General Public License (GPL) 3.0
  */
 
 #ifndef SSDL_SURFACE_H
@@ -14,7 +16,9 @@ struct SDL_Surface;
 
 namespace SDL {
 
-    //! Manage a SDL_Surface
+    /**
+     * \brief Represent a SDL_Surface
+     */
 
     class Surface {
     protected:

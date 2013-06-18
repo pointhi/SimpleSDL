@@ -1,8 +1,10 @@
-/*
- * File:   Color.cpp
- * Author: thomas
+/**
+ * \file Color.cpp
  *
- * Created on 5. Juni 2013, 19:56
+ * \author Thomas Pointhuber
+ *
+ * \date 5/6/2013
+ * \copyright GNU General Public License (GPL) 3.0
  */
 
 #include <stdint.h>

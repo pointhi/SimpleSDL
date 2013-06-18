@@ -1,8 +1,10 @@
-/*
- * File:   Window.hpp
- * Author: thomas
+/**
+ * \file Window.hpp
  *
- * Created on 5. Juni 2013, 17:51
+ * \author Thomas Pointhuber
+ *
+ * \date 5/6/2013
+ * \copyright GNU General Public License (GPL) 3.0
  */
 
 #ifndef SSDL_WINDOW_HPP
@@ -15,7 +17,12 @@ namespace SDL {
 
     class Surface;
 
-    //! Make a SDL-Window and made it editable
+    /**
+     * \brief Make a SDL-Window and made it editable
+     *
+     * \warning Please only generate one! SDL::Window object
+     * \bug Surface is getting free by SDL::Surface, I'm not sure but according documentation is that false and can produce a memory-leak
+     */
 
     class Window : public SDL::DrawingArea {
     private:

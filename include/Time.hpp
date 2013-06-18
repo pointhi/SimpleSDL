@@ -1,8 +1,10 @@
-/*
- * File:   Time.hpp
- * Author: thomas
+/**
+ * \file Time.hpp
  *
- * Created on 5. Juni 2013, 19:06
+ * \author Thomas Pointhuber
+ *
+ * \date 5/6/2013
+ * \copyright GNU General Public License (GPL) 3.0
  */
 
 #ifndef SSDL_TIME_HPP
@@ -10,7 +12,9 @@
 
 namespace SDL {
 
-    //! Working with Time-Functions
+    /**
+     * \brief Working with Time-Functions
+     */
 
     class Time {
     public:

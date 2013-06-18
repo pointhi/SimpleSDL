@@ -1,8 +1,10 @@
-/*
- * File:   Window.cpp
- * Author: thomas
+/**
+ * \file Window.cpp
  *
- * Created on 5. Juni 2013, 17:51
+ * \author Thomas Pointhuber
+ *
+ * \date 5/6/2013
+ * \copyright GNU General Public License (GPL) 3.0
  */
 
 #include "../include/Window.hpp"

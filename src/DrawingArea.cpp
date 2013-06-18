@@ -1,8 +1,10 @@
-/*
- * File:   DrawingArea.cpp
- * Author: thomas
+/**
+ * \file DrawingArea.cpp
  *
- * Created on 6. Juni 2013, 19:53
+ * \author Thomas Pointhuber
+ *
+ * \date 6/6/2013
+ * \copyright GNU General Public License (GPL) 3.0
  */
 
 #include "../include/DrawingArea.hpp"
