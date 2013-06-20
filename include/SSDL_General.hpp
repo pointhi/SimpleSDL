@@ -15,7 +15,6 @@ namespace SSDL {
     /**
      * @brief General SDL-Functions
      */
-
     class General {
     public:
 

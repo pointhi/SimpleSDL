@@ -14,6 +14,9 @@
 namespace SSDL {
 
     EventHandler::EventHandler() {
+#ifdef DEBUG
+        std::cout << "DEBUG: Constructor: SSDL::EventHandler" << std::endl;
+#endif
         this->Init();
     }
 
@@ -22,6 +25,9 @@ namespace SSDL {
     }
 
     EventHandler::~EventHandler() {
+#ifdef DEBUG
+        std::cout << "DEBUG: Destructor: Init SSDL::EventHandler" << std::endl;
+#endif
     }
 
     void EventHandler::CollectEvents() {

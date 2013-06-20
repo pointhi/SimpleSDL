@@ -20,13 +20,28 @@ namespace SSDL {
     /**
      * @brief Represent a Surface and made it editable
      */
-
     class DrawingArea : public SSDL::Surface {
     public:
 
         DrawingArea();
-        DrawingArea(const DrawingArea& orig);
         virtual ~DrawingArea();
+
+    private:
+
+        /**
+         * @param orig
+         *
+         * @todo Implementing the Copy Constructor
+         */
+        DrawingArea(const DrawingArea& orig);
+
+        /**
+         * @param orig
+         * @return
+         *
+         * @todo Implementing Copy Function
+         */
+        DrawingArea& operator=(const DrawingArea& orig);
 
     public:
 
@@ -56,6 +71,8 @@ namespace SSDL {
          * @param Text The Text who would be draw
          * @param Color The Color-Value in which the text would be draw
          *
+         * @warning size isn't implemented yet, there is only a default size.
+         * @todo Using SDL_ttf for drawing text
          */
         void DrawString(const int x, const int y, const int size, const std::string Text, const SSDL::Color Color);
 

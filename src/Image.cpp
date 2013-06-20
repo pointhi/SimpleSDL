@@ -16,22 +16,29 @@
 namespace SSDL {
 
     Image::Image() {
+#ifdef DEBUG
+        std::cout << "DEBUG: Constructor: SSDL::Image" << std::endl;
+#endif
     }
 
     Image::Image(const Image& orig) {
     }
 
     Image::~Image() {
+#ifdef DEBUG
+        std::cout << "DEBUG: Destructor: SSDL::Image" << std::endl;
+#endif
     }
 
     void Image::LoadBmp(const std::string Filepath) {
+#ifdef DEBUG
+        std::cout << "DEBUG: Load Image: " << Filepath << std::endl;
+#endif
         SDL_Surface *temp;
         temp = SDL_LoadBMP(Filepath.c_str());
 
-        //        std::cout << Filepath;
-
         if (temp == NULL) {
-            //            printf("Unable to load bitmap: %s\n", SDL_GetError());
+            std::cerr << "ERROR: Unable to load bitmap: " << SDL_GetError() << std::endl;
             throw 1;
         }
 

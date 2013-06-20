@@ -20,7 +20,6 @@ namespace SSDL {
     /**
      * @brief Working with the SDL_Event-Handler
      */
-
     class EventHandler {
     private:
 

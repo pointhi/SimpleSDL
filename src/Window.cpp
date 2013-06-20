@@ -23,24 +23,31 @@
 namespace SSDL {
 
     Window::Window(const unsigned int Width, const unsigned int Height) {
-        std::cout << "Constructor: Window" << std::endl;
+#ifdef DEBUG
+        std::cout << "DEBUG: Constructor: SSDL::Window" << std::endl;
+#endif
         this->Init(Width, Height);
     }
 
     Window::~Window() {
-
-        std::cout << "Destructor: Window" << std::endl;
+#ifdef DEBUG
+        std::cout << "DEBUG: Destructor: SSLD::Window" << std::endl;
+#endif
     }
 
     void Window::Init(const unsigned int Width, const unsigned int Height) {
         SSDL::General::Init();
+
+#ifdef DEBUG
+        std::cout << "DEBUG: Init Window" << std::endl;
+#endif
 
         this->Surface::surface = SDL_SetVideoMode(Width, Height, 16, SDL_HWSURFACE | SDL_DOUBLEBUF | SDL_HWPALETTE);
         this->Fullscreen = false;
         this->LastDisplayUpdate = SSDL::Time::GetTicks();
         this->FPS = 0;
         if (this->Surface::surface == NULL) {
-            //            fprintf(stderr, "Unable to set video mode: %s\n", SDL_GetError());
+            std::cerr << "ERROR: Unable to set video mode: " << SDL_GetError() << std::endl;
             throw 1;
         }
     }

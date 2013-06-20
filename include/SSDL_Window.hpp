@@ -96,6 +96,7 @@ namespace SSDL {
     private:
 
         Window(const Window& orig);
+        Window& operator=(const Window& orig);
 
         /**
          * @brief Init Window System

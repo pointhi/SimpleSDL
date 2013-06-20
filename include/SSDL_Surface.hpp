@@ -28,9 +28,21 @@ namespace SSDL {
     public:
 
         Surface();
-        Surface(const Surface& orig);
         virtual ~Surface();
 
+        /**
+         * @param orig
+         *
+         * @todo Testing Function
+         */
+        Surface(const Surface& orig);
+
+        /**
+         * @param orig
+         * @return
+         *
+         * @todo Testing Function
+         */
         Surface& operator=(const Surface& orig);
 
     public:

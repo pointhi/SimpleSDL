@@ -7,6 +7,8 @@
  * @copyright GNU General Public License (GPL) 3.0
  */
 
+#include <iostream>
+
 #include "SDL/SDL.h"
 
 #include "../include/SSDL_General.hpp"
@@ -14,8 +16,11 @@
 namespace SSDL {
 
     void General::Init() {
+#ifdef DEBUG
+        std::cout << "DEBUG: Init SDL Subsystems" << std::endl;
+#endif
         if (SDL_Init(SDL_INIT_VIDEO) != 0) {
-            fprintf(stderr, "Unable to initialize SDL: %s\n", SDL_GetError());
+            std::cerr << "ERROR: Unable to initialize SDL: " << SDL_GetError() << std::endl;
             throw 1;
         }
         atexit(SDL_Quit);

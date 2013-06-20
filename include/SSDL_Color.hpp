@@ -17,7 +17,6 @@ namespace SSDL {
     /**
      * @brief Represent a Color Value
      */
-
     class Color {
     public:
 

@@ -20,14 +20,18 @@
 namespace SSDL {
 
     DrawingArea::DrawingArea() {
-        std::cout << "Constructor: Drawing Area" << std::endl;
+#ifdef DEBUG
+        std::cout << "DEBUG: Constructor: SSDL::DrawingArea" << std::endl;
+#endif
     }
 
     DrawingArea::DrawingArea(const DrawingArea& orig) {
     }
 
     DrawingArea::~DrawingArea() {
-        std::cout << "Destructor: Drawing Area" << std::endl;
+#ifdef DEBUG
+        std::cout << "DEBUG: Destructor: SSDL::DrawingArea" << std::endl;
+#endif
     }
 
     void DrawingArea::DrawSurface(const int x, const int y, const Surface& Surface) {

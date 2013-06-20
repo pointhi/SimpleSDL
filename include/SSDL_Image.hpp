@@ -20,13 +20,31 @@ namespace SSDL {
 
     /**
      * @brief Represent an Image
+     *
+     * @todo Implementing loader for other Image formats as *.bmp
      */
-
     class Image : public SSDL::Surface {
     public:
         Image();
-        Image(const Image& orig);
+
         virtual ~Image();
+
+    private:
+        /**
+         * @param orig
+         *
+         * @todo Implementing the Copy Constructor
+         */
+        Image(const Image& orig);
+
+        /**
+         * @param orig
+         * @return
+         *
+         * @todo Implementing Copy Function
+         */
+        Image& operator=(const Image& orig);
+    public:
 
         /**
          * @brief Load an Image from a *.bmp-file

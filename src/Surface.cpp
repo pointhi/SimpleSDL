@@ -19,7 +19,9 @@ namespace SSDL {
 
     Surface::Surface() {
         this->surface = NULL;
-        std::cout << "Constructor: Surface" << std::endl;
+#ifdef DEBUG
+        std::cout << "DEBUG: Constructor: SSDL::Surface" << std::endl;
+#endif
     }
 
     Surface::Surface(const Surface& orig) {
@@ -27,7 +29,9 @@ namespace SSDL {
     }
 
     Surface::~Surface() {
-        std::cout << "Destructor: Surface" << std::endl;
+#ifdef DEBUG
+        std::cout << "DEBUG: Destructor: SSDL::Surface" << std::endl;
+#endif
         SDL_FreeSurface(this->surface);
     }
 
