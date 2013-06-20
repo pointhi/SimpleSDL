@@ -1,10 +1,10 @@
 /**
- * \file Image.cpp
+ * @file Image.cpp
  *
- * \author Thomas Pointhuber
+ * @author Thomas Pointhuber
  *
- * \date 6/6/2013
- * \copyright GNU General Public License (GPL) 3.0
+ * @date 6/6/2013
+ * @copyright GNU General Public License (GPL) 3.0
  */
 
 #include "../include/Image.hpp"
@@ -13,7 +13,7 @@
 
 #include <iostream>
 
-namespace SDL {
+namespace SSDL {
 
     Image::Image() {
     }

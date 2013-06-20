@@ -17,6 +17,7 @@
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
+      <itemPath>/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/README.md</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
@@ -65,6 +66,11 @@
           </linkerLibItems>
         </linkerTool>
       </compileType>
+      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/README.md"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/Color.hpp"
             ex="false"
             tool="3"
@@ -172,6 +178,11 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/README.md"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/Color.hpp"
             ex="false"
             tool="3"

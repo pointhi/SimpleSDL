@@ -1,16 +1,16 @@
 /**
- * \file General.cpp
+ * @file General.cpp
  *
- * \author Thomas Pointhuber
+ * @author Thomas Pointhuber
  *
- * \date 5/6/2013
- * \copyright GNU General Public License (GPL) 3.0
+ * @date 5/6/2013
+ * @copyright GNU General Public License (GPL) 3.0
  */
 
 #include "../include/General.hpp"
 #include "SDL/SDL.h"
 
-namespace SDL {
+namespace SSDL {
 
     void General::Init() {
         if (SDL_Init(SDL_INIT_VIDEO) != 0) {

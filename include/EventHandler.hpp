@@ -1,10 +1,10 @@
 /**
- * \file EventHandler.hpp
+ * @file EventHandler.hpp
  *
- * \author Thomas Pointhuber
+ * @author Thomas Pointhuber
  *
- * \date 6/6/2013
- * \copyright GNU General Public License (GPL) 3.0
+ * @date 6/6/2013
+ * @copyright GNU General Public License (GPL) 3.0
  */
 
 #ifndef SSDL_EVENTHANDLER_HPP
@@ -14,10 +14,10 @@
 #include <set>
 #include <string>
 
-namespace SDL {
+namespace SSDL {
 
     /**
-     * \brief Working with the SDL_Event-Handler
+     * @brief Working with the SDL_Event-Handler
      */
 
     class EventHandler {
@@ -194,5 +194,5 @@ namespace SDL {
     }
 }
 
-#endif	/* EVENTHANDLER_HPP */
+#endif	/* SSDL_EVENTHANDLER_HPP */
 

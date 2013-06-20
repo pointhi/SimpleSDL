@@ -1,35 +1,35 @@
 /**
- * \file Time.hpp
+ * @file Time.hpp
  *
- * \author Thomas Pointhuber
+ * @author Thomas Pointhuber
  *
- * \date 5/6/2013
- * \copyright GNU General Public License (GPL) 3.0
+ * @date 5/6/2013
+ * @copyright GNU General Public License (GPL) 3.0
  */
 
 #ifndef SSDL_TIME_HPP
 #define	SSDL_TIME_HPP
 
-namespace SDL {
+namespace SSDL {
 
     /**
-     * \brief Working with Time-Functions
+     * @brief Working with Time-Functions
      */
 
     class Time {
     public:
 
         /**
-         * \brief Made a simple Delay
+         * @brief Made a simple Delay
          *
-         * \param Time Amount of Milliseconds which the Programm would be wait
+         * @param Time Amount of Milliseconds which the Programm would be wait
          */
         static void Delay(unsigned int Time);
 
         /**
-         * \brief Get Milliseconds since program-start
+         * @brief Get Milliseconds since program-start
          *
-         * \return The amount of Time in Milliseconds since program start
+         * @return The amount of Time in Milliseconds since program start
          */
         static long int GetTicks();
 
@@ -40,5 +40,5 @@ namespace SDL {
 
 }
 
-#endif	/* TIME_HPP */
+#endif	/* SSDL_TIME_HPP */
 

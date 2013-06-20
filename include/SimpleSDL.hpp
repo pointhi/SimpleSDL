@@ -1,10 +1,10 @@
 /**
- * \file SimpleSDL.hpp
+ * @file SimpleSDL.hpp
  *
- * \author Thomas Pointhuber
+ * @author Thomas Pointhuber
  *
- * \date 5/6/2013
- * \copyright GNU General Public License (GPL) 3.0
+ * @date 5/6/2013
+ * @copyright GNU General Public License (GPL) 3.0
  */
 
 #ifndef SSDL_SIMPLESDL_HPP
@@ -18,5 +18,5 @@
 #include "Image.hpp"
 #include "EventHandler.hpp"
 
-#endif	/* SIMPLESDL_HPP */
+#endif	/* SSDL_SIMPLESDL_HPP */
 

@@ -1,10 +1,10 @@
 /**
- * \file Surface.cpp
+ * @file Surface.cpp
  *
- * \author Thomas Pointhuber
+ * @author Thomas Pointhuber
  *
- * \date 5/6/2013
- * \copyright GNU General Public License (GPL) 3.0
+ * @date 5/6/2013
+ * @copyright GNU General Public License (GPL) 3.0
  */
 
 #include "../include/Surface.hpp"
@@ -15,7 +15,7 @@
 
 #include <iostream>
 
-namespace SDL {
+namespace SSDL {
 
     Surface::Surface() {
         this->surface = NULL;
@@ -54,7 +54,7 @@ namespace SDL {
         this->surface = SDL_CreateRGBSurface(SDL_SWSURFACE, width, heigth, 16, 0, 0, 0, 0);
     }
 
-    void Surface::SetTransparentColor(const SDL::Color Color) {
+    void Surface::SetTransparentColor(const SSDL::Color Color) {
         SDL_SetColorKey(this->surface, SDL_SRCCOLORKEY, SDL_MapRGB(this->surface->format, Color.GetRed(), Color.GetGreen(), Color.GetBlue()));
     }
 }

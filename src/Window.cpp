@@ -1,10 +1,10 @@
 /**
- * \file Window.cpp
+ * @file Window.cpp
  *
- * \author Thomas Pointhuber
+ * @author Thomas Pointhuber
  *
- * \date 5/6/2013
- * \copyright GNU General Public License (GPL) 3.0
+ * @date 5/6/2013
+ * @copyright GNU General Public License (GPL) 3.0
  */
 
 #include "../include/Window.hpp"
@@ -17,7 +17,7 @@
 
 #include "SDL/SDL.h"
 
-namespace SDL {
+namespace SSDL {
 
     Window::Window(const unsigned int Width, const unsigned int Height) {
         std::cout << "Constructor: Window" << std::endl;
@@ -30,11 +30,11 @@ namespace SDL {
     }
 
     void Window::Init(const unsigned int Width, const unsigned int Height) {
-        SDL::General::Init();
+        SSDL::General::Init();
 
         this->Surface::surface = SDL_SetVideoMode(Width, Height, 16, SDL_HWSURFACE | SDL_DOUBLEBUF | SDL_HWPALETTE);
         this->Fullscreen = false;
-        this->LastDisplayUpdate = SDL::Time::GetTicks();
+        this->LastDisplayUpdate = SSDL::Time::GetTicks();
         this->FPS = 0;
         if (this->Surface::surface == NULL) {
             //            fprintf(stderr, "Unable to set video mode: %s\n", SDL_GetError());
@@ -45,8 +45,8 @@ namespace SDL {
     void Window::Flip() {
         SDL_Flip(this->surface);
 
-        this->FPS = 1000 / (SDL::Time::GetTicks() - this->LastDisplayUpdate);
-        this->LastDisplayUpdate = SDL::Time::GetTicks();
+        this->FPS = 1000 / (SSDL::Time::GetTicks() - this->LastDisplayUpdate);
+        this->LastDisplayUpdate = SSDL::Time::GetTicks();
     }
 
     void Window::SetFullscreen(bool Fullscreen) {

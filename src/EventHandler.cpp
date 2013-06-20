@@ -1,17 +1,17 @@
 /**
- * \file EventHandler.cpp
+ * @file EventHandler.cpp
  *
- * \author Thomas Pointhuber
+ * @author Thomas Pointhuber
  *
- * \date 6/6/2013
- * \copyright GNU General Public License (GPL) 3.0
+ * @date 6/6/2013
+ * @copyright GNU General Public License (GPL) 3.0
  */
 
 #include "../include/EventHandler.hpp"
 
 #include "SDL/SDL.h"
 
-namespace SDL {
+namespace SSDL {
 
     EventHandler::EventHandler() {
         this->Init();

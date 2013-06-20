@@ -1,10 +1,10 @@
 /**
- * \file Color.cpp
+ * @file Color.cpp
  *
- * \author Thomas Pointhuber
+ * @author Thomas Pointhuber
  *
- * \date 5/6/2013
- * \copyright GNU General Public License (GPL) 3.0
+ * @date 5/6/2013
+ * @copyright GNU General Public License (GPL) 3.0
  */
 
 #include <stdint.h>
@@ -13,7 +13,7 @@
 
 #include "../include/Color.hpp"
 
-namespace SDL {
+namespace SSDL {
 
     Color::Color(const uint8_t Red, const uint8_t Green, const uint8_t Blue, const uint8_t Alpha) {
         this->SetColor(Red, Green, Blue, Alpha);

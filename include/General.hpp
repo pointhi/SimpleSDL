@@ -1,26 +1,28 @@
 /**
- * \file General.hpp
+ * @file General.hpp
  *
- * \author Thomas Pointhuber
+ * @author Thomas Pointhuber
  *
- * \date 5/6/2013
- * \copyright GNU General Public License (GPL) 3.0
+ * @date 5/6/2013
+ * @copyright GNU General Public License (GPL) 3.0
  */
 
 #ifndef SSDL_GENERAL_HPP
 #define	SSDL_GENERAL_HPP
 
-namespace SDL {
+namespace SSDL {
 
     /**
-     * \brief General SDL-Functions
+     * @brief General SDL-Functions
      */
 
     class General {
     public:
 
         /**
-         * \brief Init SDL-Subsystems
+         * @brief Init SDL-Subsystems
+         *
+         * @throw 1 Cannot Init subsystem
          */
         static void Init();
 
@@ -31,5 +33,5 @@ namespace SDL {
 
 }
 
-#endif	/* GENERAL_HPP */
+#endif	/* SSDL_GENERAL_HPP */
 
