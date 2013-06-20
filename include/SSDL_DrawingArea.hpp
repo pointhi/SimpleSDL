@@ -10,8 +10,8 @@
 #ifndef SSDL_DRAWINGAREA_HPP
 #define	SSDL_DRAWINGAREA_HPP
 
-#include "Surface.hpp"
-#include "Color.hpp"
+#include "SSDL_Surface.hpp"
+#include "SSDL_Color.hpp"
 
 #include <string>
 

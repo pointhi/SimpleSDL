@@ -10,11 +10,11 @@
 #ifndef SSDL_IMAGE_HPP
 #define	SSDL_IMAGE_HPP
 
-#include "Surface.hpp"
+#include <string>
 
 #include "SDL/SDL.h"
 
-#include <string>
+#include "SSDL_Surface.hpp"
 
 namespace SSDL {
 

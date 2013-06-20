@@ -10,9 +10,10 @@
 #ifndef SSDL_EVENTHANDLER_HPP
 #define	SSDL_EVENTHANDLER_HPP
 
-#include "SDL/SDL.h"
 #include <set>
 #include <string>
+
+#include "SDL/SDL.h"
 
 namespace SSDL {
 

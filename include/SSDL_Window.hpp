@@ -10,9 +10,12 @@
 #ifndef SSDL_WINDOW_HPP
 #define	SSDL_WINDOW_HPP
 
-#include "DrawingArea.hpp"
 #include <string>
+
 #include <stdint.h>
+
+#include "SSDL_DrawingArea.hpp"
+
 namespace SSDL {
 
     class Surface;

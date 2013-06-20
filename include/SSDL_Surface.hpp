@@ -10,7 +10,7 @@
 #ifndef SSDL_SURFACE_H
 #define	SSDL_SURFACE_H
 
-#include "Color.hpp"
+#include "SSDL_Color.hpp"
 
 struct SDL_Surface;
 

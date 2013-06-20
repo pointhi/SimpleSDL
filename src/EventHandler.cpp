@@ -7,9 +7,9 @@
  * @copyright GNU General Public License (GPL) 3.0
  */
 
-#include "../include/EventHandler.hpp"
-
 #include "SDL/SDL.h"
+
+#include "../include/SSDL_EventHandler.hpp"
 
 namespace SSDL {
 

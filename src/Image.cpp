@@ -7,11 +7,11 @@
  * @copyright GNU General Public License (GPL) 3.0
  */
 
-#include "../include/Image.hpp"
+#include <iostream>
 
 #include "SDL/SDL.h"
 
-#include <iostream>
+#include "../include/SSDL_Image.hpp"
 
 namespace SSDL {
 

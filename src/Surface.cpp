@@ -7,13 +7,13 @@
  * @copyright GNU General Public License (GPL) 3.0
  */
 
-#include "../include/Surface.hpp"
-#include "../include/Color.hpp"
-#include "../include/Image.hpp"
+#include <iostream>
 
 #include "SDL/SDL.h"
 
-#include <iostream>
+#include "../include/SSDL_Surface.hpp"
+#include "../include/SSDL_Color.hpp"
+#include "../include/SSDL_Image.hpp"
 
 namespace SSDL {
 

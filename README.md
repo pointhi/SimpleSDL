@@ -76,10 +76,10 @@ void KeyboardEvents(int Key) {
 
 int main(int argc, char** argv) {
 
-    SDL::Window SDL_Window; // Open Window
-    SDL_Window.SetName("Test Programm for SimpleSDL by Thomas Pointhuber");
+    SSDL::Window SDL_Window; // Open Window
+    SSDL_Window.SetName("Test Programm for SimpleSDL by Thomas Pointhuber");
 
-    SDL::EventHandler Events;
+    SSDL::EventHandler Events;
 
     Events.SetCloseEventFunction(CloseEvent);   // Define Event-Function when press Close-Button
     Events.SetKeyboardDownEventFunction(KeyboardEvents);    // Define Event-Function for Keyboard pressing
@@ -90,17 +90,17 @@ int main(int argc, char** argv) {
 
         SDL_Window.Clear();     // Clear Window-Surface
 
-        SDL_Window.DrawFilledRect(20, 20, 80, 80, SDL::Color(255, 255, 0));
+        SDL_Window.DrawFilledRect(20, 20, 80, 80, SSDL::Color(255, 255, 0));
 
-        SDL_Window.DrawFilledCircle(200, 200, 80, SDL::ColorList::White);
+        SDL_Window.DrawFilledCircle(200, 200, 80, SSDL::ColorList::White);
 
-        SDL_Window.DrawLine(500, 100, 60, 400, SDL::Color(255, 0, 255));
+        SDL_Window.DrawLine(500, 100, 60, 400, SSDL::Color(255, 0, 255));
 
-        SDL_Window.DrawRect(200, 40, 80, 80, SDL::Color(255, 255, 0));
+        SDL_Window.DrawRect(200, 40, 80, 80, SSDL::Color(255, 255, 0));
 
-        SDL_Window.DrawFilledEllipse(500, 200, 50, 80, SDL::Color(255, 0, 0));
+        SDL_Window.DrawFilledEllipse(500, 200, 50, 80, SSDL::Color(255, 0, 0));
 
-        SDL_Window.DrawString(500, 400, 20, "Hello SimpleSDL", SDL::Color(255, 255, 255));
+        SDL_Window.DrawString(500, 400, 20, "Hello SimpleSDL", SSDL::Color(255, 255, 255));
 
         SDL_Window.Flip();   // Draw Window
 

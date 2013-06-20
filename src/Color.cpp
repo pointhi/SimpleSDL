@@ -11,7 +11,7 @@
 
 #include <SDL/SDL_stdinc.h>
 
-#include "../include/Color.hpp"
+#include "../include/SSDL_Color.hpp"
 
 namespace SSDL {
 

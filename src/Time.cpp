@@ -7,9 +7,9 @@
  * @copyright GNU General Public License (GPL) 3.0
  */
 
-#include "../include/Time.hpp"
-
 #include "SDL/SDL.h"
+
+#include "../include/SSDL_Time.hpp"
 
 namespace SSDL {
 

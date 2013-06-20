@@ -7,15 +7,18 @@
  * @copyright GNU General Public License (GPL) 3.0
  */
 
-#include "../include/Window.hpp"
-#include "../include/General.hpp"
-#include "../include/Surface.hpp"
-#include "../include/Time.hpp"
+
 #include <iostream>
 #include <string>
+
 #include <stdint.h>
 
 #include "SDL/SDL.h"
+
+#include "../include/SSDL_Window.hpp"
+#include "../include/SSDL_General.hpp"
+#include "../include/SSDL_Surface.hpp"
+#include "../include/SSDL_Time.hpp"
 
 namespace SSDL {
 

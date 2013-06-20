@@ -10,13 +10,13 @@
 #ifndef SSDL_SIMPLESDL_HPP
 #define	SSDL_SIMPLESDL_HPP
 
-#include "Color.hpp"
-#include "General.hpp"
-#include "Time.hpp"
-#include "Surface.hpp"
-#include "Window.hpp"
-#include "Image.hpp"
-#include "EventHandler.hpp"
+#include "SSDL_Color.hpp"
+#include "SSDL_General.hpp"
+#include "SSDL_Time.hpp"
+#include "SSDL_Surface.hpp"
+#include "SSDL_Window.hpp"
+#include "SSDL_Image.hpp"
+#include "SSDL_EventHandler.hpp"
 
 #endif	/* SSDL_SIMPLESDL_HPP */
 
