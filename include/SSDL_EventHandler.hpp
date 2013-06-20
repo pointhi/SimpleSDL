@@ -19,6 +19,8 @@ namespace SSDL {
 
     /**
      * @brief Working with the SDL_Event-Handler
+     *
+     * @warning You must call CollectEvents() anywhere in the main-loop
      */
     class EventHandler {
     private:
@@ -37,36 +39,53 @@ namespace SSDL {
 
     public:
 
-        //! Check Events
+        /**
+         * @brief Check for new Events
+         */
         void CollectEvents();
 
-        //! Set the Function who will be called when an Keyboard-Down Event occurred
-
+        /**
+         * @brief Set the Function who will be called when an Keyboard-Down Event occurred
+         *
+         * @param KeyboardDownEventFunction Function pointer which would be called
+         */
         void SetKeyboardDownEventFunction(void (*KeyboardDownEventFunction)(int)) {
             this->KeyboardDownEventFunction = KeyboardDownEventFunction;
         }
 
-        //! Set the Function who will be called when an Keyboard-Up Event occurred
-
+        /**
+         * @brief Set the Function who will be called when an Keyboard-Up Event occurred
+         *
+         * @param KeyboardUpEventFunction Function pointer which would be called
+         */
         void SetKeyboardUpEventFunction(void (*KeyboardUpEventFunction)(int)) {
             this->KeyboardUpEventFunction = KeyboardUpEventFunction;
         }
 
-        //! Set the Function who will be called when an Mouse Event occurred
-
+        /**
+         * @brief Set the Function who will be called when an Mouse Event occurred
+         *
+         * @param MouseEventFunction Function pointer which would be called
+         */
         void SetMouseEventFunction(void (*MouseEventFunction)(int)) {
             this->MouseEventFunction = MouseEventFunction;
         }; // Clicks
 
-        //! Set the Function who will be called when an System Event occurred
-
+        /**
+         * @brief Set the Function who will be called when an System Event occurred
+         *
+         * @param SystemEventFunction Function pointer which would be called
+         */
         void SetSystemEventFunction(void (*SystemEventFunction)(int)) {
 
             this->SystemEventFunction = SystemEventFunction;
         } // Quite, Rezise,...
 
-        //! Set the Function who will be called when an Close Event occurred
-
+        /**
+         * @brief Set the Function who will be called when an Close Event occurred
+         *
+         * @param CloseEventFunction Function pointer which would be called
+         */
         void SetCloseEventFunction(void (*CloseEventFunction)(int)) {
             this->CloseEventFunction = CloseEventFunction;
         } // Quite, Rezise,...
@@ -77,10 +96,13 @@ namespace SSDL {
         EventHandler(const EventHandler & orig);
     };
 
-    //! Represent the Keys of a Keyboard
-
+    /**
+     * @brief Represent the Keys of a Keyboard
+     */
     namespace Keyboard {
-        //! The Alphapet Keys
+        /**
+         * @brief The Alphapet Keys
+         */
         namespace Char {
             const int A = SDLK_a;
             const int B = SDLK_b;
@@ -110,8 +132,9 @@ namespace SSDL {
             const int Z = SDLK_z;
         }
 
-        //! Numeric-Keys on top
-
+        /**
+         * @brief Numeric-Keys on top
+         */
         namespace Num {
             const int _0 = SDLK_0;
             const int _1 = SDLK_1;
@@ -125,8 +148,9 @@ namespace SSDL {
             const int _9 = SDLK_9;
         }
 
-        //! F-Keys
-
+        /**
+         * @brief F-Keys
+         */
         namespace Func {
             const int F1 = SDLK_F1;
             const int F2 = SDLK_F2;
@@ -142,8 +166,9 @@ namespace SSDL {
             const int F12 = SDLK_F12;
         }
 
-        //! Arrows
-
+        /**
+         * @brief Arrows
+         */
         namespace Arrow {
             const int UP = SDLK_UP;
             const int DOWN = SDLK_DOWN;
@@ -151,8 +176,9 @@ namespace SSDL {
             const int LEFT = SDLK_LEFT;
         }
 
-        //! Special like space, esc,...
-
+        /**
+         * @brief special like space, esc,...
+         */
         namespace Special {
             const int ESC = SDLK_ESCAPE;
             const int TAB = SDLK_TAB;
@@ -166,8 +192,9 @@ namespace SSDL {
             const int SPACE = SDLK_SPACE;
         }
 
-        //! Buttons on the Keypad
-
+        /**
+         * @brief Buttons on the Keypad
+         */
         namespace Keypad {
             const int _0 = SDLK_KP0;
             const int _1 = SDLK_KP1;

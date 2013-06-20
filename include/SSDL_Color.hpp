@@ -119,8 +119,9 @@ namespace SSDL {
 
     };
 
-    //! Represent simple Color-Values
-
+    /**
+     * @brief Represent simple Color-Values
+     */
     namespace ColorList {
 
         // White -> Black
