@@ -39,19 +39,23 @@ namespace SSDL {
     }
 
     void DrawingArea::DrawSurface(const int x, const int y, const Surface& Surface) {
-        SDL_Rect src, dest;
+        if (Surface.GetSurface()) { // Check if surface is loaded
+            SDL_Rect src, dest;
 
-        src.x = 0;
-        src.y = 0;
-        src.w = Surface.GetSurface()->w;
-        src.h = Surface.GetSurface()->h;
+            src.x = 0;
+            src.y = 0;
+            src.w = Surface.GetSurface()->w;
+            src.h = Surface.GetSurface()->h;
 
-        dest.x = x;
-        dest.y = y;
-        dest.w = Surface.GetSurface()->w;
-        dest.h = Surface.GetSurface()->h;
+            dest.x = x;
+            dest.y = y;
+            dest.w = Surface.GetSurface()->w;
+            dest.h = Surface.GetSurface()->h;
 
-        SDL_BlitSurface(Surface.GetSurface(), &src, this->surface, &dest);
+            SDL_BlitSurface(Surface.GetSurface(), &src, this->surface, &dest);
+        } else {
+            std::cerr << "WARNING: Empty surface would be drawn " << std::endl;
+        }
     }
 
     void DrawingArea::DrawString(const int x, const int y, const int size, const std::string Text, const SSDL::Color Color) {

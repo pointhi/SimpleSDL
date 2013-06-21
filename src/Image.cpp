@@ -73,6 +73,7 @@ namespace SSDL {
         }
 
         SDL_FreeSurface(this->surface);
+        this->surface = NULL;
 
         this->surface = SDL_DisplayFormat(temp);
         SDL_FreeSurface(temp);
@@ -94,6 +95,7 @@ namespace SSDL {
         }
 
         SDL_FreeSurface(this->surface);
+        this->surface = NULL;
 
         this->surface = SDL_DisplayFormat(temp);
         SDL_FreeSurface(temp);
@@ -115,6 +117,7 @@ namespace SSDL {
         }
 
         SDL_FreeSurface(this->surface);
+        this->surface = NULL;
 
         this->surface = SDL_DisplayFormat(temp);
         SDL_FreeSurface(temp);
@@ -136,6 +139,7 @@ namespace SSDL {
         }
 
         SDL_FreeSurface(this->surface);
+        this->surface = NULL;
 
         this->surface = SDL_DisplayFormat(temp);
         SDL_FreeSurface(temp);

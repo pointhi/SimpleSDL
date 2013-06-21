@@ -58,7 +58,6 @@ namespace SSDL {
          * @param x The x-coordinate on the DrawingArea
          * @param y The y-coordinate on the DrawingArea
          * @param Surface The Surface which would draw
-         *
          */
         void DrawSurface(const int x, const int y, const Surface& Surface);
 

@@ -18,8 +18,6 @@ namespace SSDL {
 
     /**
      * @brief Represent an Image
-     *
-     * @bug Crash when no image loaded
      */
     class Image : public SSDL::Surface {
     public:
