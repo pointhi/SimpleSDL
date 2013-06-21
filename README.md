@@ -16,7 +16,7 @@ a C++ Library to simplify graphic working with SDL and adding important function
 
 ```
 sudo apt-get install libsdl1.2-dev
-sudo apt-get install libsdl-gfx1.2-dev
+sudo apt-get install libsdl-gfx1.2-dev libsdl-image1.2-dev
 ```
 
 ##Important

@@ -63,6 +63,7 @@
           <linkerLibItems>
             <linkerLibLibItem>SDL</linkerLibLibItem>
             <linkerLibLibItem>SDL_gfx</linkerLibLibItem>
+            <linkerLibLibItem>SDL_image</linkerLibLibItem>
           </linkerLibItems>
         </linkerTool>
       </compileType>
