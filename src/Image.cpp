@@ -68,7 +68,7 @@ namespace SSDL {
         temp = SDL_LoadBMP(Filepath.c_str());
 
         if (temp == NULL) {
-            std::cerr << "ERROR: Unable to load bitmap: " << SDL_GetError() << std::endl;
+            std::cerr << "ERROR: Unable to load image: " << Filepath << " - " << SDL_GetError() << std::endl;
             throw 1;
         }
 
@@ -90,7 +90,7 @@ namespace SSDL {
         temp = IMG_LoadPNG_RW(rwop);
 
         if (temp == NULL) {
-            std::cerr << "ERROR: Unable to load bitmap: " << SDL_GetError() << std::endl;
+            std::cerr << "ERROR: Unable to load image: " << Filepath << " - " << SDL_GetError() << std::endl;
             throw 1;
         }
 
@@ -112,7 +112,7 @@ namespace SSDL {
         temp = IMG_LoadJPG_RW(rwop);
 
         if (temp == NULL) {
-            std::cerr << "ERROR: Unable to load bitmap: " << SDL_GetError() << std::endl;
+            std::cerr << "ERROR: Unable to load image: " << Filepath << " - " << SDL_GetError() << std::endl;
             throw 1;
         }
 
@@ -134,7 +134,7 @@ namespace SSDL {
         temp = IMG_LoadGIF_RW(rwop);
 
         if (temp == NULL) {
-            std::cerr << "ERROR: Unable to load bitmap: " << SDL_GetError() << std::endl;
+            std::cerr << "ERROR: Unable to load image: " << Filepath << " - " << SDL_GetError() << std::endl;
             throw 1;
         }
 

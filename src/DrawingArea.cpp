@@ -54,7 +54,9 @@ namespace SSDL {
 
             SDL_BlitSurface(Surface.GetSurface(), &src, this->surface, &dest);
         } else {
+#ifdef DEBUG
             std::cerr << "WARNING: Empty surface would be drawn " << std::endl;
+#endif
         }
     }
 
@@ -77,7 +79,6 @@ namespace SSDL {
         } else {
             thickLineRGBA(this->surface, x2, y2, x1, y1, width, Color.GetRed(), Color.GetGreen(), Color.GetBlue(), Color.GetAlpha());
         }
-
     }
 
     void DrawingArea::DrawRect(const int x1, const int y1, const int x2, const int y2, const SSDL::Color Color) {
