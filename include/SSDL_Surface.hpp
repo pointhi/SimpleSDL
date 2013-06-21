@@ -10,11 +10,13 @@
 #ifndef SSDL_SURFACE_H
 #define	SSDL_SURFACE_H
 
-#include "SSDL_Color.hpp"
+//#include "SSDL_Color.hpp"
 
 struct SDL_Surface;
 
 namespace SSDL {
+
+    class Color;
 
     /**
      * @brief Represent a SDL_Surface

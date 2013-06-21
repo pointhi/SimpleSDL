@@ -11,11 +11,13 @@
 #define	SSDL_DRAWINGAREA_HPP
 
 #include "SSDL_Surface.hpp"
-#include "SSDL_Color.hpp"
+//#include "SSDL_Color.hpp"
 
 #include <string>
 
 namespace SSDL {
+
+    class Color;
 
     /**
      * @brief Represent a Surface and made it editable
@@ -48,9 +50,7 @@ namespace SSDL {
         /**
          * @brief Clear the Surface
          */
-        void Clear() {
-            this->Fill(SSDL::ColorList::Black);
-        }
+        void Clear();
 
         /**
          * @brief Copy a Surface like an Image or a DrawingArea in this Surface

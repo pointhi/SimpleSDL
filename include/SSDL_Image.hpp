@@ -12,8 +12,6 @@
 
 #include <string>
 
-#include "SDL/SDL.h"
-
 #include "SSDL_Surface.hpp"
 
 namespace SSDL {

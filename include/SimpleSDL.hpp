@@ -14,6 +14,7 @@
 #include "SSDL_General.hpp"
 #include "SSDL_Time.hpp"
 #include "SSDL_Surface.hpp"
+#include "SSDL_DrawingArea.hpp"
 #include "SSDL_Window.hpp"
 #include "SSDL_Image.hpp"
 #include "SSDL_EventHandler.hpp"

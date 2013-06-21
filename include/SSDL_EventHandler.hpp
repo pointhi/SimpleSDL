@@ -13,7 +13,10 @@
 #include <set>
 #include <string>
 
-#include "SDL/SDL.h"
+/**
+ * @todo SDL include removen (replace with new and delete)
+ */
+#include "SDL/SDL_events.h"
 
 namespace SSDL {
 

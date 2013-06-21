@@ -34,6 +34,10 @@ namespace SSDL {
 #endif
     }
 
+    void DrawingArea::Clear() {
+        this->Fill(SSDL::ColorList::Black);
+    }
+
     void DrawingArea::DrawSurface(const int x, const int y, const Surface& Surface) {
         SDL_Rect src, dest;
 
