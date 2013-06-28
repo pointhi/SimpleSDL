@@ -34,16 +34,13 @@ namespace SSDL {
 
         /**
          * @param orig
-         *
-         * @todo Testing Function
          */
         Surface(const Surface& orig);
 
         /**
          * @param orig
-         * @return
          *
-         * @todo Testing Function
+         * @return
          */
         Surface& operator=(const Surface& orig);
 

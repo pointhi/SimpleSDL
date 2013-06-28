@@ -40,10 +40,14 @@ namespace SSDL {
             return *this;
         }
 
+        std::cout << "Copy" << std::endl;
+
         SDL_FreeSurface(this->surface);
         this->surface = NULL;
 
-        SDL_BlitSurface(orig.surface, NULL, this->surface, NULL);
+        this->NewSurface(orig.GetSurface()->w, orig.GetSurface()->h);
+
+        SDL_BlitSurface(orig.GetSurface(), NULL, this->surface, NULL);
         return *this;
     }
 
