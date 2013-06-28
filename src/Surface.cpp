@@ -40,8 +40,6 @@ namespace SSDL {
             return *this;
         }
 
-        std::cout << "Copy" << std::endl;
-
         SDL_FreeSurface(this->surface);
         this->surface = NULL;
 
@@ -64,5 +62,22 @@ namespace SSDL {
 
     void Surface::SetTransparentColor(const SSDL::Color Color) {
         SDL_SetColorKey(this->surface, SDL_SRCCOLORKEY, SDL_MapRGB(this->surface->format, Color.GetRed(), Color.GetGreen(), Color.GetBlue()));
+    }
+
+    SSDL::Surface Surface::CutOutSurface(const int x1, const int y1, const int x2, const int y2) {
+        // Part of the bitmap that we want to draw
+        SDL_Rect source;
+        source.x = x1;
+        source.y = y1;
+        source.w = x2;
+        source.h = y2;
+
+        SSDL::Surface returnSurface;
+
+        returnSurface.NewSurface(x2 - x1, y2 - y1);
+
+        SDL_BlitSurface(this->surface, &source, returnSurface.GetSurface(), NULL);
+
+        return returnSurface;
     }
 }

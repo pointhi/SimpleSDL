@@ -144,5 +144,4 @@ namespace SSDL {
         this->surface = SDL_DisplayFormat(temp);
         SDL_FreeSurface(temp);
     }
-
 }

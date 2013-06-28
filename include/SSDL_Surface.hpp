@@ -68,6 +68,17 @@ namespace SSDL {
          */
         void SetTransparentColor(const SSDL::Color Color);
 
+        /**
+         * @brief Cut out a part of an Surface
+         *
+         * @param x1 x Start-point for Cutting
+         * @param y1 y Start-point for Cutting
+         * @param x2 x End-point for Cutting
+         * @param y2 y End-point for Cutting
+         *
+         * @return New Surface
+         */
+        SSDL::Surface CutOutSurface(const int x1, const int y1, const int x2, const int y2);
     };
 
 }
