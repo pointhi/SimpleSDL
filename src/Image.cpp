@@ -33,6 +33,7 @@ namespace SSDL {
     }
 
     Image::Image(const Image& orig) {
+        *this = orig;
     }
 
     Image::~Image() {

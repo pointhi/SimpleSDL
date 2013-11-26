@@ -33,7 +33,6 @@ namespace SSDL {
         Image(const std::string Filepath);
         virtual ~Image();
 
-    private:
         /**
          * @param orig
          *
@@ -47,7 +46,7 @@ namespace SSDL {
          *
          * @todo Implementing Copy Function
          */
-        Image& operator=(const Image& orig);
+        //Image& operator=(const Image& orig);
     public:
 
         /**
