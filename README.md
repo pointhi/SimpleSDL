@@ -7,16 +7,25 @@ a C++ Library to simplify graphic working with SDL and adding important function
 
 **work status:** pre Alpha, still in Developing
 
+[![Build Status](https://travis-ci.org/pointhi/SimpleSDL.png)](https://travis-ci.org/pointhi/SimpleSDL)
+
 ##Needed-Librarys
 
 * SDL
 * SDL_gfx
+* SDL_image
 
-####Installation on Debian/Ubuntu
+####Installation of Required Library's on Debian/Ubuntu
 
 ```
 sudo apt-get install libsdl1.2-dev
 sudo apt-get install libsdl-gfx1.2-dev libsdl-image1.2-dev
+```
+
+#### Installation
+
+```
+make
 ```
 
 ##Important
