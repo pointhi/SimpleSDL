@@ -35,13 +35,13 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/_ext/1908258589/Color.o \
-	${OBJECTDIR}/_ext/1908258589/DrawingArea.o \
-	${OBJECTDIR}/_ext/1908258589/EventHandler.o \
-	${OBJECTDIR}/_ext/1908258589/General.o \
-	${OBJECTDIR}/_ext/1908258589/Image.o \
-	${OBJECTDIR}/_ext/1908258589/Surface.o \
-	${OBJECTDIR}/_ext/1908258589/Time.o \
+	${OBJECTDIR}/src/Color.o \
+	${OBJECTDIR}/src/DrawingArea.o \
+	${OBJECTDIR}/src/EventHandler.o \
+	${OBJECTDIR}/src/General.o \
+	${OBJECTDIR}/src/Image.o \
+	${OBJECTDIR}/src/Surface.o \
+	${OBJECTDIR}/src/Time.o \
 	${OBJECTDIR}/src/Window.o
 
 
@@ -69,40 +69,40 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libSimpleSDL.${CND_DLIB_EXT}: ${OBJEC
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libSimpleSDL.${CND_DLIB_EXT} ${OBJECTFILES} ${LDLIBSOPTIONS} -shared -fPIC
 
-${OBJECTDIR}/_ext/1908258589/Color.o: /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Color.cpp 
-	${MKDIR} -p ${OBJECTDIR}/_ext/1908258589
+${OBJECTDIR}/src/Color.o: src/Color.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} $@.d
-	$(COMPILE.cc) -O2 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1908258589/Color.o /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Color.cpp
+	$(COMPILE.cc) -O2 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/Color.o src/Color.cpp
 
-${OBJECTDIR}/_ext/1908258589/DrawingArea.o: /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/DrawingArea.cpp 
-	${MKDIR} -p ${OBJECTDIR}/_ext/1908258589
+${OBJECTDIR}/src/DrawingArea.o: src/DrawingArea.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} $@.d
-	$(COMPILE.cc) -O2 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1908258589/DrawingArea.o /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/DrawingArea.cpp
+	$(COMPILE.cc) -O2 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/DrawingArea.o src/DrawingArea.cpp
 
-${OBJECTDIR}/_ext/1908258589/EventHandler.o: /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/EventHandler.cpp 
-	${MKDIR} -p ${OBJECTDIR}/_ext/1908258589
+${OBJECTDIR}/src/EventHandler.o: src/EventHandler.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} $@.d
-	$(COMPILE.cc) -O2 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1908258589/EventHandler.o /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/EventHandler.cpp
+	$(COMPILE.cc) -O2 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/EventHandler.o src/EventHandler.cpp
 
-${OBJECTDIR}/_ext/1908258589/General.o: /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/General.cpp 
-	${MKDIR} -p ${OBJECTDIR}/_ext/1908258589
+${OBJECTDIR}/src/General.o: src/General.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} $@.d
-	$(COMPILE.cc) -O2 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1908258589/General.o /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/General.cpp
+	$(COMPILE.cc) -O2 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/General.o src/General.cpp
 
-${OBJECTDIR}/_ext/1908258589/Image.o: /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Image.cpp 
-	${MKDIR} -p ${OBJECTDIR}/_ext/1908258589
+${OBJECTDIR}/src/Image.o: src/Image.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} $@.d
-	$(COMPILE.cc) -O2 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1908258589/Image.o /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Image.cpp
+	$(COMPILE.cc) -O2 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/Image.o src/Image.cpp
 
-${OBJECTDIR}/_ext/1908258589/Surface.o: /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Surface.cpp 
-	${MKDIR} -p ${OBJECTDIR}/_ext/1908258589
+${OBJECTDIR}/src/Surface.o: src/Surface.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} $@.d
-	$(COMPILE.cc) -O2 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1908258589/Surface.o /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Surface.cpp
+	$(COMPILE.cc) -O2 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/Surface.o src/Surface.cpp
 
-${OBJECTDIR}/_ext/1908258589/Time.o: /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Time.cpp 
-	${MKDIR} -p ${OBJECTDIR}/_ext/1908258589
+${OBJECTDIR}/src/Time.o: src/Time.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} $@.d
-	$(COMPILE.cc) -O2 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1908258589/Time.o /home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Time.cpp
+	$(COMPILE.cc) -O2 -I. -fPIC  -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/Time.o src/Time.cpp
 
 ${OBJECTDIR}/src/Window.o: src/Window.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src

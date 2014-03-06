@@ -4,31 +4,31 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/SSDL_Color.hpp</itemPath>
-      <itemPath>/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/SSDL_DrawingArea.hpp</itemPath>
-      <itemPath>/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/SSDL_EventHandler.hpp</itemPath>
-      <itemPath>/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/SSDL_General.hpp</itemPath>
-      <itemPath>/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/SSDL_Image.hpp</itemPath>
-      <itemPath>/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/SSDL_Surface.hpp</itemPath>
-      <itemPath>/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/SSDL_Time.hpp</itemPath>
+      <itemPath>include/SSDL_Color.hpp</itemPath>
+      <itemPath>include/SSDL_DrawingArea.hpp</itemPath>
+      <itemPath>include/SSDL_EventHandler.hpp</itemPath>
+      <itemPath>include/SSDL_General.hpp</itemPath>
+      <itemPath>include/SSDL_Image.hpp</itemPath>
+      <itemPath>include/SSDL_Surface.hpp</itemPath>
+      <itemPath>include/SSDL_Time.hpp</itemPath>
       <itemPath>include/SSDL_Window.hpp</itemPath>
-      <itemPath>/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/SimpleSDL.hpp</itemPath>
+      <itemPath>include/SimpleSDL.hpp</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
-      <itemPath>/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/README.md</itemPath>
+      <itemPath>README.md</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Color.cpp</itemPath>
-      <itemPath>/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/DrawingArea.cpp</itemPath>
-      <itemPath>/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/EventHandler.cpp</itemPath>
-      <itemPath>/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/General.cpp</itemPath>
-      <itemPath>/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Image.cpp</itemPath>
-      <itemPath>/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Surface.cpp</itemPath>
-      <itemPath>/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Time.cpp</itemPath>
+      <itemPath>src/Color.cpp</itemPath>
+      <itemPath>src/DrawingArea.cpp</itemPath>
+      <itemPath>src/EventHandler.cpp</itemPath>
+      <itemPath>src/General.cpp</itemPath>
+      <itemPath>src/Image.cpp</itemPath>
+      <itemPath>src/Surface.cpp</itemPath>
+      <itemPath>src/Time.cpp</itemPath>
       <itemPath>src/Window.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
@@ -36,7 +36,7 @@
                    projectFiles="false"
                    kind="IMPORTANT_FILES_FOLDER">
       <itemPath>Makefile</itemPath>
-      <itemPath>/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/README.md</itemPath>
+      <itemPath>README.md</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
@@ -67,82 +67,82 @@
           </linkerLibItems>
         </linkerTool>
       </compileType>
-      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/README.md"
+      <item path="README.md"
             ex="false"
             tool="3"
             flavor2="0">
       </item>
-      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/SSDL_Color.hpp"
+      <item path="include/SSDL_Color.hpp"
             ex="false"
             tool="3"
             flavor2="0">
       </item>
-      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/SSDL_DrawingArea.hpp"
+      <item path="include/SSDL_DrawingArea.hpp"
             ex="false"
             tool="3"
             flavor2="0">
       </item>
-      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/SSDL_EventHandler.hpp"
+      <item path="include/SSDL_EventHandler.hpp"
             ex="false"
             tool="3"
             flavor2="0">
       </item>
-      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/SSDL_General.hpp"
+      <item path="include/SSDL_General.hpp"
             ex="false"
             tool="3"
             flavor2="0">
       </item>
-      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/SSDL_Image.hpp"
+      <item path="include/SSDL_Image.hpp"
             ex="false"
             tool="3"
             flavor2="0">
       </item>
-      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/SSDL_Surface.hpp"
+      <item path="include/SSDL_Surface.hpp"
             ex="false"
             tool="3"
             flavor2="0">
       </item>
-      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/SSDL_Time.hpp"
+      <item path="include/SSDL_Time.hpp"
             ex="false"
             tool="3"
             flavor2="0">
       </item>
-      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/SimpleSDL.hpp"
+      <item path="include/SimpleSDL.hpp"
             ex="false"
             tool="3"
             flavor2="0">
       </item>
-      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Color.cpp"
+      <item path="src/Color.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/DrawingArea.cpp"
+      <item path="src/DrawingArea.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/EventHandler.cpp"
+      <item path="src/EventHandler.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/General.cpp"
+      <item path="src/General.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Image.cpp"
+      <item path="src/Image.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Surface.cpp"
+      <item path="src/Surface.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Time.cpp"
+      <item path="src/Time.cpp"
             ex="false"
             tool="1"
             flavor2="0">
@@ -179,82 +179,82 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/README.md"
+      <item path="README.md"
             ex="false"
             tool="3"
             flavor2="0">
       </item>
-      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/SSDL_Color.hpp"
+      <item path="include/SSDL_Color.hpp"
             ex="false"
             tool="3"
             flavor2="0">
       </item>
-      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/SSDL_DrawingArea.hpp"
+      <item path="include/SSDL_DrawingArea.hpp"
             ex="false"
             tool="3"
             flavor2="0">
       </item>
-      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/SSDL_EventHandler.hpp"
+      <item path="include/SSDL_EventHandler.hpp"
             ex="false"
             tool="3"
             flavor2="0">
       </item>
-      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/SSDL_General.hpp"
+      <item path="include/SSDL_General.hpp"
             ex="false"
             tool="3"
             flavor2="0">
       </item>
-      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/SSDL_Image.hpp"
+      <item path="include/SSDL_Image.hpp"
             ex="false"
             tool="3"
             flavor2="0">
       </item>
-      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/SSDL_Surface.hpp"
+      <item path="include/SSDL_Surface.hpp"
             ex="false"
             tool="3"
             flavor2="0">
       </item>
-      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/SSDL_Time.hpp"
+      <item path="include/SSDL_Time.hpp"
             ex="false"
             tool="3"
             flavor2="0">
       </item>
-      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/include/SimpleSDL.hpp"
+      <item path="include/SimpleSDL.hpp"
             ex="false"
             tool="3"
             flavor2="0">
       </item>
-      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Color.cpp"
+      <item path="src/Color.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/DrawingArea.cpp"
+      <item path="src/DrawingArea.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/EventHandler.cpp"
+      <item path="src/EventHandler.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/General.cpp"
+      <item path="src/General.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Image.cpp"
+      <item path="src/Image.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Surface.cpp"
+      <item path="src/Surface.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="/home/thomas/Dokumente/Projekte/Graphic/SimpleSDL/src/Time.cpp"
+      <item path="src/Time.cpp"
             ex="false"
             tool="1"
             flavor2="0">
